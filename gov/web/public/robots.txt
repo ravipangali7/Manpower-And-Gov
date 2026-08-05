@@ -5,3 +5,4 @@ Allow: /
 Disallow: /admin
 
 Sitemap: https://www.dofe.gov.np/sitemap.xml
+Sitemap: https://www.dofe.gov.np/sitemap-images.xml

@@ -127,7 +127,7 @@ function OverseasPage() {
               {what?.image_url ? (
                 <img
                   src={what.image_url}
-                  alt=""
+                  alt={what.heading || "What is overseas recruitment?"}
                   className="mt-6 max-h-72 w-full object-cover"
                 />
               ) : null}

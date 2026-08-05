@@ -436,7 +436,10 @@ export const quickLinks = [
   { label: "About Us", to: "/about" },
   { label: "News & Updates", to: "/news" },
   { label: "Contact Us", to: "/contact" },
-  { label: "VNV Gallery", to: "/awards" },
-  { label: "Stakeholders", to: "/about" },
+  { label: "VNV Gallery", to: "/gallery" },
+  { label: "Ethical Recruitment", to: "/ethical-recruitment" },
+  { label: "Methodology", to: "/methodology" },
+  { label: "Careers", to: "/careers" },
+  { label: "Demands", to: "/demands" },
   { label: "Awards & Recognition", to: "/awards" },
 ] as const;

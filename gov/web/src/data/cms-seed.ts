@@ -449,6 +449,24 @@ export const SEED_PAGES: StaticPage[] = [
     body:
       "The Government of Nepal has opened 111 countries for foreign employment. Labour approval is granted only for these recognized destinations.\n\nMajor destinations include Qatar, Malaysia, United Arab Emirates, Saudi Arabia, Kuwait, Bahrain, Oman, Japan, Republic of Korea, Israel, Romania, Poland, Croatia, Cyprus, Malta, Portugal, Mauritius and the Maldives.\n\nThe list of recognized countries is updated by decision of the Government of Nepal and published through notices of this Department.",
   },
+  {
+    id: "page-9",
+    slug: "privacy-policy",
+    title: "Privacy Policy",
+    body:
+      "This website is operated by the Department of Foreign Employment, Ministry of Youth, Labour and Employment, Government of Nepal (Tahachal, Kathmandu).\n\nPersonal information you submit through contact forms or linked government systems (such as FEIMS or Ujuri) is used only to respond to your enquiry or to deliver the requested public service, in accordance with applicable Nepali law.\n\nWe do not sell personal data. Server and analytics logs (if enabled) may record technical details such as IP address, browser type and pages visited to maintain service reliability and security.\n\nFor privacy questions, contact info@dofe.gov.np or call 01-4792671 / toll-free 1140.",
+    metaDescription:
+      "Privacy policy for the Department of Foreign Employment official website — how enquiry and service data are handled.",
+  },
+  {
+    id: "page-10",
+    slug: "terms-of-use",
+    title: "Terms of Use",
+    body:
+      "Content on this portal is published for public information about foreign employment regulation and services of the Department of Foreign Employment.\n\nOfficial notices, acts and lists published here prevail for administrative purposes. Always verify critical facts (agency licences, demand letters, labour approval status) through FEIMS (https://feims.dofe.gov.np) or the Department before taking action.\n\nUnauthorised alteration of content, scraping that disrupts service, or misuse of Department systems is prohibited. Linked third-party sites are governed by their own terms.\n\nContact: info@dofe.gov.np · Tahachal, Kathmandu · 01-4792671.",
+    metaDescription:
+      "Terms of use for the Department of Foreign Employment official website and public information services.",
+  },
 ];
 
 export const SEED_ALBUMS: Album[] = GALLERY.map((g, i) => ({
@@ -544,7 +562,7 @@ export const SEED_SETTINGS: Settings = {
   email: "info@dofe.gov.np",
   adminUser: "admin",
   adminPassword: "admin123",
-  siteUrl: "https://gov.luckyuser365.com",
+  siteUrl: "https://www.dofe.gov.np",
   ogImageUrl: "https://gov.luckyuser365.com/og-default.png",
   facebookUrl: "https://www.facebook.com/dofe.np",
   twitterUrl: "https://x.com/baidesik_rojgar",

@@ -126,7 +126,7 @@ function ServicesPage() {
               {intro?.image_url ? (
                 <img
                   src={intro.image_url}
-                  alt=""
+                  alt={intro.heading || intro.subheading || "Recruitment services"}
                   className="mt-6 max-h-72 w-full object-cover"
                 />
               ) : null}
@@ -237,7 +237,7 @@ function SectorCard({ sector }: { sector: ServiceSector }) {
       {sector.image_url ? (
         <img
           src={sector.image_url}
-          alt=""
+          alt={sector.name}
           className="h-14 w-14 rounded-full object-cover"
         />
       ) : (

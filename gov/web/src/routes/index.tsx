@@ -9,7 +9,9 @@ import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
+import { FaqSection } from "@/components/seo/faq-section";
 import { PageBar } from "@/components/site-header";
+import { HOMEPAGE_DEFINITION } from "@/config/site-seo";
 import { CATEGORY_TITLES } from "@/data/cms-seed";
 import { useCms } from "@/lib/cms-store";
 import { buildPageMeta } from "@/lib/seo";
@@ -56,6 +58,30 @@ function Index() {
   return (
     <div>
       <PageBar label="Home" crumbs={[{ name: "Home", path: "/" }]} />
+
+      <section className="mx-auto mt-6 max-w-[1400px] px-4 md:px-8">
+        <h1 className="text-2xl font-semibold text-gov-ink md:text-3xl">
+          Department of Foreign Employment — Government of Nepal
+        </h1>
+        <p className="mt-3 max-w-4xl text-sm leading-relaxed text-muted-foreground md:text-base">
+          {HOMEPAGE_DEFINITION}
+        </p>
+        <p className="mt-3 text-sm text-gov-ink">
+          Explore{" "}
+          <Link to="/services-list" className="gov-link font-medium">
+            online services
+          </Link>
+          ,{" "}
+          <Link to="/jobs" className="gov-link font-medium">
+            foreign employment jobs
+          </Link>
+          , and{" "}
+          <Link to="/contact-us" className="gov-link font-medium">
+            contact information
+          </Link>
+          .
+        </p>
+      </section>
 
       {/* Contact number banner */}
       <section className="mx-auto mt-6 max-w-[1400px] px-4 md:px-8">
@@ -347,6 +373,8 @@ function Index() {
           </Link>
         </div>
       </section>
+
+      <FaqSection className="mx-auto max-w-[1400px] px-4 py-10 md:px-8" />
     </div>
   );
 }

@@ -142,6 +142,7 @@ function NewsDetail() {
             datePublished: article.datePublished,
             dateModified: article.datePublished,
             path: `/news/${article.slug}`,
+            image: article.cover,
           })}
         />
       )}
@@ -171,7 +172,7 @@ function NewsDetail() {
           {article.cover ? (
             <img
               src={article.cover}
-              alt=""
+              alt={article.title}
               className="mt-8 h-64 w-full object-cover"
               loading="lazy"
             />

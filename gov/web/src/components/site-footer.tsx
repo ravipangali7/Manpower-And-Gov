@@ -72,6 +72,16 @@ export function SiteFooter() {
                   Services
                 </Link>
               </li>
+              <li>
+                <Link to="/pages/$slug" params={{ slug: "privacy-policy" }} className="hover:underline">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/pages/$slug" params={{ slug: "terms-of-use" }} className="hover:underline">
+                  Terms of Use
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -199,7 +199,7 @@ function TeamPage() {
                         <div className="flex items-center gap-3">
                           <Avatar className="h-11 w-11 border border-border bg-muted">
                             {m.photoUrl ? (
-                              <AvatarImage src={m.photoUrl} alt="" className="object-cover" />
+                              <AvatarImage src={m.photoUrl} alt={m.name} className="object-cover" />
                             ) : null}
                             <AvatarFallback className="bg-muted text-muted-foreground">
                               <User className="h-5 w-5" aria-hidden />

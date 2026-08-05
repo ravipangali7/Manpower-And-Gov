@@ -76,7 +76,7 @@ function ContentSection({ block }: { block: ContentBlock }) {
       {block.image_url ? (
         <img
           src={block.image_url}
-          alt=""
+          alt={block.heading || block.subheading || "Ethical recruitment"}
           className="max-h-72 w-full object-cover"
           loading="lazy"
         />

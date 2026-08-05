@@ -23,6 +23,7 @@ export type ArticleInput = {
   datePublished: string;
   dateModified?: string;
   path: string;
+  image?: string | null;
 };
 
 /** Organization + EmploymentAgency (LocalBusiness) for @graph injection. */
@@ -114,7 +115,7 @@ export function buildFaqPage(faqs: FaqItem[]) {
 
 export function buildArticle(input: ArticleInput) {
   const url = absoluteUrl(input.path);
-  return {
+  const article: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: input.title,
@@ -134,4 +135,51 @@ export function buildArticle(input: ArticleInput) {
     },
     url,
   };
+  if (input.image) {
+    article.image = absoluteUrl(input.image);
+  }
+  return article;
+}
+
+export type VideoObjectInput = {
+  name: string;
+  description: string;
+  thumbnailUrl: string;
+  contentUrl: string;
+  embedUrl?: string;
+  /** ISO-8601 date; omit when unknown — do not fabricate. */
+  uploadDate?: string;
+};
+
+/**
+ * VideoObject JSON-LD. Returns null when required fields are missing.
+ * Does not invent uploadDate.
+ */
+export function buildVideoObject(input: VideoObjectInput) {
+  const name = input.name.trim();
+  const description = input.description.trim();
+  const thumbnailUrl = input.thumbnailUrl.trim();
+  const contentUrl = input.contentUrl.trim();
+  if (!name || !description || !thumbnailUrl || !contentUrl) return null;
+
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name,
+    description,
+    thumbnailUrl,
+    contentUrl,
+    publisher: {
+      "@id": ORG_ID(),
+    },
+  };
+
+  if (input.embedUrl?.trim()) {
+    schema.embedUrl = input.embedUrl.trim();
+  }
+  if (input.uploadDate?.trim()) {
+    schema.uploadDate = input.uploadDate.trim();
+  }
+
+  return schema;
 }

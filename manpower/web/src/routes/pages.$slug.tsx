@@ -77,7 +77,7 @@ function CmsPage() {
           {data.banner_image_url && (
             <img
               src={data.banner_image_url}
-              alt=""
+              alt={data.title}
               className="mt-8 w-full object-cover"
               loading="lazy"
             />

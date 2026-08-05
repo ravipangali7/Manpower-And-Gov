@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { Briefcase, MapPin, Search, Users } from "lucide-react";
+import { JsonLd } from "@/components/seo/json-ld";
 import { PageBar } from "@/components/site-header";
 import { useCms } from "@/lib/cms-store";
+import { jobPostingsList } from "@/lib/schema";
 import { buildPageMeta } from "@/lib/seo";
 
 export const Route = createFileRoute("/jobs")({
@@ -36,6 +38,7 @@ function JobsPage() {
 
   return (
     <div>
+      <JsonLd data={jobPostingsList(data.jobs)} />
       <PageBar label="Jobs" />
       <section className="mx-auto max-w-[1400px] px-4 py-8 md:px-8">
         <h1 className="gov-section-title text-lg">Approved Foreign Employment Vacancies</h1>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.dofe.gov.np/gallery</loc>
+    <image:image>
+      <image:loc>https://www.dofe.gov.np/og-default.png</image:loc>
+      <image:title>Department of Foreign Employment gallery</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.dofe.gov.np/</loc>
+    <image:image>
+      <image:loc>https://www.dofe.gov.np/nepal-emblem.png</image:loc>
+      <image:title>Emblem of Nepal — Department of Foreign Employment</image:title>
+    </image:image>
+  </url>
+</urlset>

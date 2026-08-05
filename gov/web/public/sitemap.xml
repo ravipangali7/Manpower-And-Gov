@@ -33,63 +33,75 @@
   </url>
   <url>
     <loc>https://www.dofe.gov.np/gallery</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.dofe.gov.np/pages/our-mission</loc>
-    <lastmod>2026-07-30</lastmod>
+    <loc>https://www.dofe.gov.np/pages/aim-and-vision</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.dofe.gov.np/pages/background</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.dofe.gov.np/pages/structure</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.dofe.gov.np/pages/structure-work</loc>
-    <lastmod>2026-07-30</lastmod>
+    <loc>https://www.dofe.gov.np/pages/organization-structure</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.dofe.gov.np/pages/division-sections</loc>
-    <lastmod>2026-07-30</lastmod>
+    <loc>https://www.dofe.gov.np/pages/major-scope-of-works</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.dofe.gov.np/pages/functions-of-divisions-sections</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.dofe.gov.np/pages/citizen-charter</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.dofe.gov.np/pages/public-important</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.dofe.gov.np/pages/recognized-country</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.dofe.gov.np/pages/about-this-website</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.dofe.gov.np/pages/privacy-policy</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.dofe.gov.np/pages/terms-of-use</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.dofe.gov.np/category/recruitment</loc>

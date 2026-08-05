@@ -95,7 +95,7 @@ function NewsPage() {
                   {n.cover ? (
                     <img
                       src={n.cover}
-                      alt=""
+                      alt={n.title}
                       className="h-48 w-full object-cover"
                       loading="lazy"
                     />

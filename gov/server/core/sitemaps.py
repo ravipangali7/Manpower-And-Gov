@@ -20,7 +20,7 @@ STATIC_PUBLIC_PATHS = [
     "/our-team",
     "/contact-us",
     "/jobs",
-    "/search",
+    # /search is noindex — omit from sitemap inventory
 ]
 
 

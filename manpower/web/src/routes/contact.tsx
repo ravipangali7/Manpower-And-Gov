@@ -150,14 +150,16 @@ function ContactPage() {
           { name: "Contact Us", path: "/contact" },
         ])}
       />
-      <JsonLd
-        data={buildFaqPage(
-          faqs.map((f) => ({
-            question: f.q,
-            answer: f.a,
-          })),
-        )}
-      />
+      {faqs.length > 0 ? (
+        <JsonLd
+          data={buildFaqPage(
+            faqs.map((f) => ({
+              question: f.q,
+              answer: f.a,
+            })),
+          )}
+        />
+      ) : null}
       <PageBanner title="Contact Us" crumb="Contact Us" />
 
       {isError && !data ? (

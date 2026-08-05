@@ -20,6 +20,15 @@ import {
 import { ApiError } from "@/lib/api";
 import { resolveCmsIcon } from "@/lib/cms-icons";
 import { loadPageSeo, seoFromCms } from "@/lib/page-seo";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { HOMEPAGE_DEFINITION, HOMEPAGE_FAQS } from "@/config/seo";
+import { buildFaqPage } from "@/lib/schema";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const HOME_SEO = {
   title: "VNVNEPAL | Ethical Manpower & Overseas Recruitment Agency Nepal",
@@ -67,6 +76,7 @@ function HomePage() {
   return (
     <SiteLayout>
       <Hero data={data} ready={ready} />
+      <HomeIntro />
       <WhatWeDo ethic={data?.ethic} form={sections?.partnership_form} />
       <Motto
         steps={ready ? data?.motto ?? [] : undefined}
@@ -94,7 +104,79 @@ function HomePage() {
         items={ready ? data?.clients ?? [] : undefined}
         heading={sections?.clients.heading}
       />
+      <HomeFaq />
     </SiteLayout>
+  );
+}
+
+function HomeIntro() {
+  return (
+    <section className="border-b border-border bg-background py-12">
+      <div className="mx-auto max-w-[1240px] px-5">
+        <h2 className="sr-only">About Vision & Value Overseas</h2>
+        <p className="max-w-4xl text-base leading-relaxed text-foreground md:text-lg">
+          {HOMEPAGE_DEFINITION}
+        </p>
+        <p className="mt-4 text-sm text-muted-foreground md:text-base">
+          Learn more about{" "}
+          <Link to="/about" className="font-medium text-brand-blue underline-offset-2 hover:underline">
+            our company
+          </Link>
+          ,{" "}
+          <Link
+            to="/ethical-recruitment"
+            className="font-medium text-brand-blue underline-offset-2 hover:underline"
+          >
+            ethical recruitment
+          </Link>
+          ,{" "}
+          <Link
+            to="/services"
+            className="font-medium text-brand-blue underline-offset-2 hover:underline"
+          >
+            overseas recruitment services
+          </Link>
+          , and current{" "}
+          <Link
+            to="/vacancies"
+            className="font-medium text-brand-blue underline-offset-2 hover:underline"
+          >
+            job vacancies
+          </Link>
+          .
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function HomeFaq() {
+  return (
+    <section className="bg-section py-16" aria-labelledby="home-faq-heading">
+      <JsonLd
+        id="home-faq-jsonld"
+        data={buildFaqPage(
+          HOMEPAGE_FAQS.map((f) => ({ question: f.question, answer: f.answer })),
+        )}
+      />
+      <div className="mx-auto max-w-[800px] px-5">
+        <h2 id="home-faq-heading" className="text-2xl font-bold text-brand-blue">
+          Frequently asked questions
+        </h2>
+        <Accordion type="single" collapsible className="mt-6">
+          {HOMEPAGE_FAQS.map((faq, i) => (
+            <AccordionItem key={faq.question} value={`faq-${i}`}>
+              <AccordionTrigger className="text-left text-base font-semibold">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </section>
   );
 }
 
@@ -471,6 +553,7 @@ function Stats({
         <img
           src={backgroundUrl}
           alt=""
+          aria-hidden="true"
           loading="lazy"
           width={1920}
           height={700}
@@ -519,7 +602,11 @@ function Expertise({
           {expertise.map((e) => (
             <div key={e.id} className="bg-white p-6">
               {e.image_url ? (
-                <img src={e.image_url} alt="" className="h-14 w-14 rounded-full object-cover" />
+                <img
+                  src={e.image_url}
+                  alt={`${e.name} sector`}
+                  className="h-14 w-14 rounded-full object-cover"
+                />
               ) : (
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-red-soft">
                   <Users className="h-7 w-7 text-primary" />

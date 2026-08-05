@@ -1,24 +1,26 @@
-# Pixel Perfect Replica
+# Vision & Value Overseas (VNVNEPAL)
 
-As above given images zip file make me a exact manpower website as given image with same dummy data, same color and same design
+Public website for Vision & Value Overseas Pvt. Ltd. — ethical overseas manpower recruitment from Nepal.
 
-This project was built with [Lovable](https://lovable.dev).
+## Stack
 
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/f71f790d-4636-4e8a-9fb4-74b43136b392).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- **Frontend:** TanStack Start (React 19) + Vite + Tailwind CSS
+- **Backend:** Django REST API (`../server`)
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm install
 npm run dev
 ```
+
+Requires the Django API on `http://127.0.0.1:8000` (Vite proxies `/api` and `/media`).
+
+Production build:
+
+```sh
+npm run build
+npm run preview
+```
+
+Set `VITE_SITE_URL` to the public origin (e.g. `https://www.vnvnepal.com`) for correct canonical and Open Graph URLs. Optional: `VITE_GOOGLE_SITE_VERIFICATION`, `VITE_GA_MEASUREMENT_ID`, `VITE_PLAUSIBLE_DOMAIN`.

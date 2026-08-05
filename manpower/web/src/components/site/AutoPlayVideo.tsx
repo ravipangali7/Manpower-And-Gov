@@ -115,7 +115,7 @@ export function AutoPlayVideo({
           {poster ? (
             <img
               src={poster}
-              alt=""
+              alt={resolvedTitle}
               className="absolute inset-0 h-full w-full object-cover"
               loading="lazy"
             />

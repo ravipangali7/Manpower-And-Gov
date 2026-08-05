@@ -51,7 +51,9 @@ DEBUG = env_bool('DEBUG', True)
 ALLOWED_HOSTS = env_list('ALLOWED_HOSTS', ['*'])
 
 BACKEND_URL = os.getenv('BACKEND_URL', 'https://manpowerapi.luckyuser365.com').rstrip('/')
-FRONTEND_URL = os.getenv('FRONTEND_URL', 'https://manpower.luckyuser365.com').rstrip('/')
+FRONTEND_URL = os.getenv('FRONTEND_URL', 'https://www.vnvnepal.com').rstrip('/')
+# Public frontend origin for IndexNow + absolute URL helpers (falls back to FRONTEND_URL)
+SITE_URL = os.environ.get('SITE_URL', FRONTEND_URL).rstrip('/')
 
 
 # Application definition
@@ -64,7 +66,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
+    'core.apps.CoreConfig',
     'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',

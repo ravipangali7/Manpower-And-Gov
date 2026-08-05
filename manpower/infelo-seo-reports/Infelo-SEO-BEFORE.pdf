@@ -9,153 +9,157 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 9 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 4405 >>
+<< /Length 4218 >>
 stream
 BT /F1 16 Tf 40 800 Td (Infelo SEO ? BEFORE Report) Tj ET
 BT /F1 11 Tf 40 782 Td (Automatic SEO / AEO / GEO audit) Tj ET
 BT /F1 10 Tf 40 769 Td () Tj ET
-BT /F1 10 Tf 40 757 Td (Generated: 2026-07-30T16:08:00+00:00) Tj ET
-BT /F1 10 Tf 40 745 Td (Project: Vision & Value Overseas \(VNVNEPAL\) ? ethical overseas manpower recruitment agency,) Tj ET
-BT /F1 10 Tf 40 733 Td (Kathmandu) Tj ET
-BT /F1 10 Tf 40 721 Td (Stack: TanStack Start \(React 19 + Vite 8 + Nitro\) frontend; Django 6 + DRF backend; SQLite) Tj ET
-BT /F1 10 Tf 40 709 Td (Render mode: SSR \(TanStack Start / Nitro\); hybrid with client interactivity) Tj ET
-BT /F1 10 Tf 40 697 Td (Site type: local) Tj ET
-BT /F1 10 Tf 40 685 Td (Frontend: web/ ? file-based routes, route head meta, static content from src/data/site.ts) Tj ET
-BT /F1 10 Tf 40 673 Td (Backend: server/ ? Django REST API under /api/ for pages, jobs, news, FAQs, forms) Tj ET
-BT /F1 10 Tf 40 661 Td () Tj ET
-BT /F1 13 Tf 40 649 Td (Summary) Tj ET
-BT /F1 10 Tf 40 634 Td (PASS: 17 FAIL: 25 N/A: 7) Tj ET
-BT /F1 12 Tf 40 622 Td (Verdict: NEEDS WORK) Tj ET
-BT /F1 10 Tf 40 608 Td () Tj ET
-BT /F1 13 Tf 40 596 Td (Checklist) Tj ET
-BT /F1 10 Tf 40 581 Td (----------------------------------------------------------------------------------------) Tj ET
-BT /F1 10 Tf 40 569 Td ([PASS] #1 Website / page purpose) Tj ET
-BT /F1 9 Tf 40 557 Td (web/src/routes/* ? dedicated routes \(/about, /services, /vacancies, /news, /contact\) each) Tj ET
-BT /F1 9 Tf 40 545 Td (cover one topic) Tj ET
-BT /F1 10 Tf 40 533 Td ([FAIL] #3 SEO basics) Tj ET
-BT /F1 9 Tf 40 521 Td (web/src/routes/index.tsx H1 'Rated 4.9 Stars' + news.$slug.tsx thin excerpt+boilerplate ?) Tj ET
-BT /F1 9 Tf 40 509 Td (topic/copy weak on home & news) Tj ET
-BT /F1 10 Tf 40 497 Td ([FAIL] #4 AEO) Tj ET
-BT /F1 9 Tf 40 485 Td (No definition-first lead paragraphs; contact FAQ UI only without quotable Q/A schema) Tj ET
-BT /F1 10 Tf 40 473 Td ([PASS] #5 GEO) Tj ET
-BT /F1 9 Tf 40 461 Td (web/src/data/site.ts company NAP + about/footer state brand, service, Kathmandu audience) Tj ET
-BT /F1 9 Tf 40 449 Td (clearly) Tj ET
-BT /F1 10 Tf 40 437 Td ([PASS] #6 Crawling) Tj ET
-BT /F1 9 Tf 40 425 Td (Header.tsx + Footer.tsx + site.ts navLinks expose all public routes) Tj ET
-BT /F1 10 Tf 40 413 Td ([PASS] #7 Indexing readiness) Tj ET
-BT /F1 9 Tf 40 401 Td (Public heads lack noindex; only intentional noindex on missing news. Admin still crawlable ?) Tj ET
-BT /F1 9 Tf 40 389 Td (see #9) Tj ET
-BT /F1 10 Tf 40 377 Td ([FAIL] #9 robots.txt) Tj ET
-BT /F1 9 Tf 40 365 Td (web/public/robots.txt Allow:/ only ? no Sitemap line, no Disallow /admin) Tj ET
-BT /F1 10 Tf 40 353 Td ([FAIL] #10 sitemap.xml) Tj ET
-BT /F1 9 Tf 40 341 Td (No sitemap.xml \(or generator\) under web/public or routes) Tj ET
-BT /F1 10 Tf 40 329 Td ([FAIL] #11 JSON-LD) Tj ET
-BT /F1 9 Tf 40 317 Td (No application/ld+json anywhere in web/src) Tj ET
-BT /F1 10 Tf 40 305 Td ([FAIL] #12 Schema) Tj ET
-BT /F1 9 Tf 40 293 Td (No schema.org types implemented in FE head/components) Tj ET
-BT /F1 10 Tf 40 281 Td ([FAIL] #13 Structured data) Tj ET
-BT /F1 9 Tf 40 269 Td (Zero structured-data scripts in __root.tsx or page heads) Tj ET
-BT /F1 10 Tf 40 257 Td ([PASS] #14 Rich results eligibility) Tj ET
-BT /F1 9 Tf 40 245 Td (No schema present ? no misleading rich-result markup) Tj ET
-BT /F1 10 Tf 40 233 Td ([FAIL] #15 Breadcrumb) Tj ET
-BT /F1 9 Tf 40 221 Td (PageBanner crumb UI only; no BreadcrumbList JSON-LD) Tj ET
-BT /F1 10 Tf 40 209 Td ([FAIL] #16 Canonical URL) Tj ET
-BT /F1 9 Tf 40 197 Td (No rel=canonical in any route head; no SITE_URL env) Tj ET
-BT /F1 10 Tf 40 185 Td ([FAIL] #17 Meta title) Tj ET
-BT /F1 9 Tf 40 173 Td (Per-route titles exist, but news.$slug uses long titles often >>60 chars) Tj ET
-BT /F1 10 Tf 40 161 Td ([PASS] #18 Meta description) Tj ET
-BT /F1 9 Tf 40 149 Td (Unique name=description on main public page heads) Tj ET
-BT /F1 10 Tf 40 137 Td ([FAIL] #19 Headings / single H1) Tj ET
-BT /F1 9 Tf 40 125 Td (index.tsx H1='Rated 4.9 Stars'; news.$slug.tsx dual-H1 \(banner + article\)) Tj ET
-BT /F1 10 Tf 40 113 Td ([FAIL] #20 Keywords) Tj ET
-BT /F1 9 Tf 40 101 Td (Home H1/keywords mismatch ? 'Rated 4.9 Stars' not recruitment intent) Tj ET
-BT /F1 10 Tf 40 89 Td ([PASS] #21 Internal links) Tj ET
-BT /F1 9 Tf 40 77 Td (Header/footer + home CTAs; news back-link; jobs?registration) Tj ET
-BT /F1 10 Tf 40 65 Td ([FAIL] #22 External links) Tj ET
+BT /F1 10 Tf 40 757 Td (Generated: 2026-08-05T15:20:00+05:45) Tj ET
+BT /F1 10 Tf 40 745 Td (Project: Manpower and GOV \(DoFE + VNVNEPAL monorepo\)) Tj ET
+BT /F1 10 Tf 40 733 Td (Stack: TanStack Start \(React 19\) + Vite 8 SPA prerender; Django REST backends;) Tj ET
+BT /F1 10 Tf 40 721 Td (@lovable.dev/vite-tanstack-config still wired) Tj ET
+BT /F1 10 Tf 40 709 Td (Render mode: SPA shell prerender \(nitro: false\) + client routing; meta via TanStack head\(\)) Tj ET
+BT /F1 10 Tf 40 697 Td (Site type: Hybrid: Government portal \(gov\) + Employment agency / recruitment marketing) Tj ET
+BT /F1 10 Tf 40 685 Td (\(manpower\)) Tj ET
+BT /F1 10 Tf 40 673 Td (Frontend: gov/web + manpower/web) Tj ET
+BT /F1 10 Tf 40 661 Td (Backend: gov/server + manpower/server \(Django+DRF\)) Tj ET
+BT /F1 10 Tf 40 649 Td () Tj ET
+BT /F1 13 Tf 40 637 Td (Summary) Tj ET
+BT /F1 10 Tf 40 622 Td (PASS: 28 FAIL: 14 N/A: 6) Tj ET
+BT /F1 12 Tf 40 610 Td (Verdict: NEEDS WORK) Tj ET
+BT /F1 10 Tf 40 596 Td () Tj ET
+BT /F1 13 Tf 40 584 Td (Checklist) Tj ET
+BT /F1 10 Tf 40 569 Td (----------------------------------------------------------------------------------------) Tj ET
+BT /F1 10 Tf 40 557 Td ([PASS] #1 Page purpose / one topic) Tj ET
+BT /F1 9 Tf 40 545 Td (Dedicated routes for contact, jobs/vacancies, services, news/content.) Tj ET
+BT /F1 10 Tf 40 533 Td ([PASS] #3 SEO basics) Tj ET
+BT /F1 9 Tf 40 521 Td (buildPageMeta on public routes; site-seo/seo config present.) Tj ET
+BT /F1 10 Tf 40 509 Td ([FAIL] #4 AEO answer-first) Tj ET
+BT /F1 9 Tf 40 497 Td (Gov home lacks definition H1/lead; FAQ only on contact \(gov\).) Tj ET
+BT /F1 10 Tf 40 485 Td ([PASS] #5 GEO / citable entities) Tj ET
+BT /F1 9 Tf 40 473 Td (site-seo NAP + EmploymentAgency/GovernmentOrganization schema.) Tj ET
+BT /F1 10 Tf 40 461 Td ([FAIL] #6 Crawling / internal discovery) Tj ET
+BT /F1 9 Tf 40 449 Td (Manpower public routes exist but several omitted from sitemap.) Tj ET
+BT /F1 10 Tf 40 437 Td ([PASS] #7 Indexing readiness) Tj ET
+BT /F1 9 Tf 40 425 Td (Admin noindex; robots Disallow /admin.) Tj ET
+BT /F1 10 Tf 40 413 Td ([PASS] #9 robots.txt) Tj ET
+BT /F1 9 Tf 40 401 Td (gov/web/public/robots.txt + manpower/web/public/robots.txt.) Tj ET
+BT /F1 10 Tf 40 389 Td ([FAIL] #10 sitemap.xml) Tj ET
+BT /F1 9 Tf 40 377 Td (Manpower sitemap incomplete; gov search path not in static sitemap.) Tj ET
+BT /F1 10 Tf 40 365 Td ([PASS] #11 JSON-LD present) Tj ET
+BT /F1 9 Tf 40 353 Td (JsonLd components + schema helpers.) Tj ET
+BT /F1 10 Tf 40 341 Td ([PASS] #12 Schema.org types) Tj ET
+BT /F1 9 Tf 40 329 Td (Org/Office/Agency, FAQ, Article, BreadcrumbList.) Tj ET
+BT /F1 10 Tf 40 317 Td ([PASS] #13 Structured data validity) Tj ET
+BT /F1 9 Tf 40 305 Td (Required props from site config / visible content.) Tj ET
+BT /F1 10 Tf 40 293 Td ([PASS] #14 Rich results honesty) Tj ET
+BT /F1 9 Tf 40 281 Td (No fabricated Review/Product aggregates.) Tj ET
+BT /F1 10 Tf 40 269 Td ([PASS] #15 Breadcrumbs) Tj ET
+BT /F1 9 Tf 40 257 Td (PageBar / breadcrumbs + BreadcrumbList on nested pages.) Tj ET
+BT /F1 10 Tf 40 245 Td ([PASS] #16 Canonical URL) Tj ET
+BT /F1 9 Tf 40 233 Td (buildPageMeta sets canonical + og:url.) Tj ET
+BT /F1 10 Tf 40 221 Td ([PASS] #17 Meta title) Tj ET
+BT /F1 9 Tf 40 209 Td (Per-route titles via head\(\).) Tj ET
+BT /F1 10 Tf 40 197 Td ([PASS] #18 Meta description) Tj ET
+BT /F1 9 Tf 40 185 Td (Per-route descriptions.) Tj ET
+BT /F1 10 Tf 40 173 Td ([FAIL] #19 Headings / single H1) Tj ET
+BT /F1 9 Tf 40 161 Td (gov/web/src/routes/index.tsx ? no h1 on homepage.) Tj ET
+BT /F1 10 Tf 40 149 Td ([PASS] #20 Keywords natural) Tj ET
+BT /F1 9 Tf 40 137 Td (Foreign employment / overseas recruitment in titles and copy.) Tj ET
+BT /F1 10 Tf 40 125 Td ([PASS] #21 Internal links) Tj ET
+BT /F1 9 Tf 40 113 Td (Nav + footer + contextual links.) Tj ET
+BT /F1 10 Tf 40 101 Td ([PASS] #22 External refs) Tj ET
+BT /F1 9 Tf 40 89 Td (Gov FEIMS/Ujuri/ministry links; manpower policy citations where present.) Tj ET
+BT /F1 10 Tf 40 77 Td ([N/A] #23 Backlinks) Tj ET
+BT /F1 9 Tf 40 65 Td (Manual strategy only.) Tj ET
 endstream
 endobj
 5 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 6 0 R /Resources << /Font << /F1 9 0 R >> >> >>
 endobj
 6 0 obj
-<< /Length 4395 >>
+<< /Length 4126 >>
 stream
-BT /F1 9 Tf 40 800 Td (Footer social + policy links href='#'; no https citations to DoFE/IOM/etc.) Tj ET
-BT /F1 10 Tf 40 788 Td ([N/A] #23 Backlinks) Tj ET
-BT /F1 9 Tf 40 776 Td (Strategy-only ? not implementable in-repo) Tj ET
-BT /F1 10 Tf 40 764 Td ([PASS] #24 Page speed) Tj ET
-BT /F1 9 Tf 40 752 Td (Below-fold lazy + width/height; fonts &display=swap) Tj ET
-BT /F1 10 Tf 40 740 Td ([PASS] #25 Mobile friendly) Tj ET
-BT /F1 9 Tf 40 728 Td (viewport + responsive Tailwind + mobile menu) Tj ET
-BT /F1 10 Tf 40 716 Td ([FAIL] #26 HTTPS) Tj ET
-BT /F1 9 Tf 40 704 Td (No SITE_URL/https absolute base for canonical/OG) Tj ET
-BT /F1 10 Tf 40 692 Td ([PASS] #27 Core Web Vitals) Tj ET
-BT /F1 9 Tf 40 680 Td (img width/height, aspect-video, Poppins display=swap) Tj ET
-BT /F1 10 Tf 40 668 Td ([PASS] #28 Image SEO) Tj ET
-BT /F1 9 Tf 40 656 Td (Descriptive asset filenames under web/src/assets/) Tj ET
-BT /F1 10 Tf 40 644 Td ([FAIL] #29 Alt text) Tj ET
-BT /F1 9 Tf 40 632 Td (Mixed: some good alts; PageBanner alt='' and other empty content alts) Tj ET
-BT /F1 10 Tf 40 620 Td ([FAIL] #30 Open Graph) Tj ET
-BT /F1 9 Tf 40 608 Td (og:title/description/type present; missing og:image and og:url) Tj ET
-BT /F1 10 Tf 40 596 Td ([FAIL] #31 Twitter Card) Tj ET
-BT /F1 9 Tf 40 584 Td (Only twitter:card set ? no twitter:title/description/image) Tj ET
-BT /F1 10 Tf 40 572 Td ([FAIL] #32 FAQ schema) Tj ET
-BT /F1 9 Tf 40 560 Td (FAQ accordion in contact.tsx; no FAQPage JSON-LD) Tj ET
-BT /F1 10 Tf 40 548 Td ([FAIL] #33 Organization schema) Tj ET
-BT /F1 9 Tf 40 536 Td (company in site.ts but no Organization JSON-LD) Tj ET
-BT /F1 10 Tf 40 524 Td ([FAIL] #34 LocalBusiness schema) Tj ET
-BT /F1 9 Tf 40 512 Td (Local Kathmandu NAP present; no LocalBusiness JSON-LD) Tj ET
-BT /F1 10 Tf 40 500 Td ([N/A] #35 Product schema) Tj ET
-BT /F1 9 Tf 40 488 Td (Vacancies are jobs, not e-commerce products) Tj ET
-BT /F1 10 Tf 40 476 Td ([N/A] #36 Review schema) Tj ET
-BT /F1 9 Tf 40 464 Td (Testimonials exist but no review system ? must not invent AggregateRating) Tj ET
-BT /F1 10 Tf 40 452 Td ([FAIL] #37 Article schema) Tj ET
-BT /F1 9 Tf 40 440 Td (News routes exist; no Article JSON-LD) Tj ET
-BT /F1 10 Tf 40 428 Td ([N/A] #38 Video schema) Tj ET
-BT /F1 9 Tf 40 416 Td (Play-button placeholder only ? no real video) Tj ET
-BT /F1 10 Tf 40 404 Td ([N/A] #39 Search Console) Tj ET
-BT /F1 9 Tf 40 392 Td (Cannot verify in code; no verification meta provided) Tj ET
-BT /F1 10 Tf 40 380 Td ([FAIL] #40 Analytics) Tj ET
-BT /F1 9 Tf 40 368 Td (No GA/GTM/Plausible snippet in root layout) Tj ET
-BT /F1 10 Tf 40 356 Td ([FAIL] #41 EEAT) Tj ET
-BT /F1 9 Tf 40 344 Td (About/contact exist; Privacy/Terms href='#'; unverified 4.9 Stars claim) Tj ET
-BT /F1 10 Tf 40 332 Td ([FAIL] #42 Helpful content) Tj ET
-BT /F1 9 Tf 40 320 Td (news.$slug.tsx bodies are excerpt + generic boilerplate) Tj ET
-BT /F1 10 Tf 40 308 Td ([FAIL] #43 Fresh content) Tj ET
-BT /F1 9 Tf 40 296 Td (News entries lack datePublished/dateModified display) Tj ET
-BT /F1 10 Tf 40 284 Td ([PASS] #44 Topical authority) Tj ET
-BT /F1 9 Tf 40 272 Td (Services, overseas-recruitment, news, vacancies, awards topic set) Tj ET
-BT /F1 10 Tf 40 260 Td ([PASS] #45 Entity SEO) Tj ET
-BT /F1 9 Tf 40 248 Td (Consistent Vision & Value Overseas / VNVNEPAL / NAP in site.ts) Tj ET
-BT /F1 10 Tf 40 236 Td ([PASS] #46 Semantic SEO) Tj ET
-BT /F1 9 Tf 40 224 Td (Ethical recruitment, sectors, destinations, compliance covered) Tj ET
-BT /F1 10 Tf 40 212 Td ([PASS] #47 Content clusters) Tj ET
-BT /F1 9 Tf 40 200 Td (Services hub + overseas-recruitment + jobs/news linked via nav/CTAs) Tj ET
-BT /F1 10 Tf 40 188 Td ([PASS] #48 URL structure) Tj ET
-BT /F1 9 Tf 40 176 Td (Lowercase hyphen routes: /services/overseas-recruitment, /news/$slug) Tj ET
-BT /F1 10 Tf 40 164 Td ([N/A] #49 Image & video sitemaps) Tj ET
-BT /F1 9 Tf 40 152 Td (Only ~4 content images ? dedicated media sitemaps not warranted) Tj ET
-BT /F1 10 Tf 40 140 Td ([N/A] #50 IndexNow) Tj ET
-BT /F1 9 Tf 40 128 Td (Optional; no publish pipeline for IndexNow) Tj ET
-BT /F1 10 Tf 40 116 Td () Tj ET
-BT /F1 13 Tf 40 104 Td (Notes) Tj ET
-BT /F1 10 Tf 40 89 Td (- Confirmed: robots.txt without Sitemap; no sitemap.xml; no JSON-LD; no canonicals; no) Tj ET
-BT /F1 10 Tf 40 77 Td (og:image; no SITE_URL.) Tj ET
-BT /F1 10 Tf 40 65 Td (- Per-route title/description present on main public pages; OG title/description partial.) Tj ET
+BT /F1 10 Tf 40 800 Td ([PASS] #24 Page speed) Tj ET
+BT /F1 9 Tf 40 788 Td (Lazy images, Vite code-split; residual SPA JS cost documented.) Tj ET
+BT /F1 10 Tf 40 776 Td ([PASS] #25 Mobile friendly) Tj ET
+BT /F1 9 Tf 40 764 Td (Responsive Tailwind layouts + viewport.) Tj ET
+BT /F1 10 Tf 40 752 Td ([PASS] #26 HTTPS absolute URLs) Tj ET
+BT /F1 9 Tf 40 740 Td (absoluteUrl helpers force https.) Tj ET
+BT /F1 10 Tf 40 728 Td ([PASS] #27 CWV hygiene) Tj ET
+BT /F1 9 Tf 40 716 Td (font-display=swap; sized media patterns.) Tj ET
+BT /F1 10 Tf 40 704 Td ([PASS] #28 Image filenames) Tj ET
+BT /F1 9 Tf 40 692 Td (Descriptive asset names in src/assets and public og-default.) Tj ET
+BT /F1 10 Tf 40 680 Td ([PASS] #29 Alt text) Tj ET
+BT /F1 9 Tf 40 668 Td (Emblem/gallery alts present on key components.) Tj ET
+BT /F1 10 Tf 40 656 Td ([PASS] #30 Open Graph) Tj ET
+BT /F1 9 Tf 40 644 Td (og:* via buildPageMeta; og-default assets in public/.) Tj ET
+BT /F1 10 Tf 40 632 Td ([PASS] #31 Twitter Card) Tj ET
+BT /F1 9 Tf 40 620 Td (summary_large_image + twitter:* tags.) Tj ET
+BT /F1 10 Tf 40 608 Td ([PASS] #32 FAQ schema) Tj ET
+BT /F1 9 Tf 40 596 Td (FAQ UI + FAQPage on contact routes.) Tj ET
+BT /F1 10 Tf 40 584 Td ([PASS] #33 Organization schema) Tj ET
+BT /F1 9 Tf 40 572 Td (Root/layout org graph.) Tj ET
+BT /F1 10 Tf 40 560 Td ([PASS] #34 LocalBusiness) Tj ET
+BT /F1 9 Tf 40 548 Td (GovernmentOffice / EmploymentAgency NAP.) Tj ET
+BT /F1 10 Tf 40 536 Td ([N/A] #35 Product schema) Tj ET
+BT /F1 9 Tf 40 524 Td (Not e-commerce.) Tj ET
+BT /F1 10 Tf 40 512 Td ([N/A] #36 Review schema) Tj ET
+BT /F1 9 Tf 40 500 Td (No review aggregate system.) Tj ET
+BT /F1 10 Tf 40 488 Td ([PASS] #37 Article schema) Tj ET
+BT /F1 9 Tf 40 476 Td (content.$id / news.$slug Article JSON-LD.) Tj ET
+BT /F1 10 Tf 40 464 Td ([N/A] #38 Video schema) Tj ET
+BT /F1 9 Tf 40 452 Td (No primary video pages.) Tj ET
+BT /F1 10 Tf 40 440 Td ([FAIL] #39 Search Console) Tj ET
+BT /F1 9 Tf 40 428 Td (Verification meta slot exists but tokens not set; favicon 404.) Tj ET
+BT /F1 10 Tf 40 416 Td ([PASS] #40 Analytics) Tj ET
+BT /F1 9 Tf 40 404 Td (Analytics components with env-gated GA/Plausible.) Tj ET
+BT /F1 10 Tf 40 392 Td ([PASS] #41 EEAT) Tj ET
+BT /F1 9 Tf 40 380 Td (About/contact/team/privacy/terms pages exist.) Tj ET
+BT /F1 10 Tf 40 368 Td ([PASS] #42 Helpful content) Tj ET
+BT /F1 9 Tf 40 356 Td (Service/news/jobs content oriented to user tasks.) Tj ET
+BT /F1 10 Tf 40 344 Td ([PASS] #43 Freshness) Tj ET
+BT /F1 9 Tf 40 332 Td (sitemap lastmod + article dates where applicable.) Tj ET
+BT /F1 10 Tf 40 320 Td ([PASS] #44 Topical authority) Tj ET
+BT /F1 9 Tf 40 308 Td (Category hubs \(gov\) + service/news clusters \(manpower\).) Tj ET
+BT /F1 10 Tf 40 296 Td ([FAIL] #45 Entity SEO) Tj ET
+BT /F1 9 Tf 40 284 Td (Lovable/AI provenance in README undermines brand entity clarity; package name still) Tj ET
+BT /F1 9 Tf 40 272 Td (tanstack_start_ts.) Tj ET
+BT /F1 10 Tf 40 260 Td ([PASS] #46 Semantic SEO) Tj ET
+BT /F1 9 Tf 40 248 Td (Related foreign employment / recruitment topics covered.) Tj ET
+BT /F1 10 Tf 40 236 Td ([PASS] #47 Content clusters) Tj ET
+BT /F1 9 Tf 40 224 Td (Pillar services + news/content hubs.) Tj ET
+BT /F1 10 Tf 40 212 Td ([PASS] #48 URL structure) Tj ET
+BT /F1 9 Tf 40 200 Td (Short hyphenated public paths.) Tj ET
+BT /F1 10 Tf 40 188 Td ([N/A] #49 Image/video sitemaps) Tj ET
+BT /F1 9 Tf 40 176 Td (Media volume does not require dedicated image sitemap.) Tj ET
+BT /F1 10 Tf 40 164 Td ([PASS] #50 IndexNow) Tj ET
+BT /F1 9 Tf 40 152 Td (Gov IndexNow hooks present; manpower optional/docs.) Tj ET
+BT /F1 10 Tf 40 140 Td ([FAIL] #AI1 Remove Lovable / AI footprints) Tj ET
+BT /F1 9 Tf 40 128 Td (vite-tanstack-config dep, lovable-error-reporting.ts, AGENTS.md, README Lovable sections,) Tj ET
+BT /F1 9 Tf 40 116 Td (bunfig excludes, reportLovableError in __root.tsx.) Tj ET
+BT /F1 10 Tf 40 104 Td () Tj ET
+BT /F1 13 Tf 40 92 Td (Notes) Tj ET
+BT /F1 10 Tf 40 77 Td (- Both apps still ship Lovable toolchain \(@lovable.dev/vite-tanstack-config,) Tj ET
+BT /F1 10 Tf 40 65 Td (lovable-error-reporting, AGENTS.md, Lovable README boilerplate\).) Tj ET
 endstream
 endobj
 7 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 8 0 R /Resources << /Font << /F1 9 0 R >> >> >>
 endobj
 8 0 obj
-<< /Length 414 >>
+<< /Length 785 >>
 stream
-BT /F1 10 Tf 40 800 Td (- H1: home is marketing \('Rated 4.9 Stars'\); news detail dual H1 risk.) Tj ET
-BT /F1 10 Tf 40 788 Td (- Local NAP in site.ts; LocalBusiness schema missing.) Tj ET
-BT /F1 10 Tf 40 776 Td (- Jobs = vacancies \(Product N/A\); admin /admin has no robots Disallow/noindex.) Tj ET
-BT /F1 10 Tf 40 764 Td () Tj ET
-BT /F1 10 Tf 40 752 Td () Tj ET
-BT /F1 9 Tf 40 740 Td (Product: Infelo SEO) Tj ET
+BT /F1 10 Tf 40 800 Td (- Gov homepage has no H1 \(only h2 SectionTitle\) despite prior Infelo AFTER claiming PASS.) Tj ET
+BT /F1 10 Tf 40 788 Td (- Manpower static sitemap missing /methodology, /ethical-recruitment, /demands, /gallery,) Tj ET
+BT /F1 10 Tf 40 776 Td (/careers.) Tj ET
+BT /F1 10 Tf 40 764 Td (- Favicon.ico missing on both sites \(head links to /favicon.ico\).) Tj ET
+BT /F1 10 Tf 40 752 Td (- AI/prompt provenance text remains in READMEs \(clone prompts / Lovable marketing\).) Tj ET
+BT /F1 10 Tf 40 740 Td (- CSR/SPA residual: crawlers get shell HTML; route meta depends on client head injection) Tj ET
+BT /F1 10 Tf 40 728 Td (unless prerendered.) Tj ET
+BT /F1 10 Tf 40 716 Td () Tj ET
+BT /F1 10 Tf 40 704 Td () Tj ET
+BT /F1 9 Tf 40 692 Td (Product: Infelo SEO) Tj ET
 endstream
 endobj
 9 0 obj
@@ -168,13 +172,13 @@ xref
 0000000058 00000 n 
 0000000127 00000 n 
 0000000253 00000 n 
-0000004710 00000 n 
-0000004836 00000 n 
-0000009283 00000 n 
-0000009409 00000 n 
-0000009874 00000 n 
+0000004523 00000 n 
+0000004649 00000 n 
+0000008827 00000 n 
+0000008953 00000 n 
+0000009789 00000 n 
 trailer
 << /Size 10 /Root 1 0 R >>
 startxref
-9944
+9859
 %%EOF

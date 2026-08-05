@@ -10,7 +10,7 @@ import {
 export const SITE_URL = (
   (typeof import.meta !== "undefined" && import.meta.env?.VITE_SITE_URL) ||
   CONFIG_SITE_URL ||
-  "https://manpower.luckyuser365.com"
+  "https://www.vnvnepal.com"
 ).replace(/\/$/, "");
 
 export { SITE_BRAND, SITE_NAME, DEFAULT_OG_IMAGE_PATH };
@@ -43,10 +43,10 @@ export const seo = {
  * Backlinks (#23): Earn editorial links via NAFEA/IOM/DoFE citations, news,
  * and partner directories — do not buy links or use PBNs.
  *
- * IndexNow (#50): On publish (news/job create or update), POST the changed
- * absolute URLs to https://api.indexnow.org/indexnow with a real key hosted
- * at `/{key}.txt` under public/. Do not commit a fake key — wire when a Bing
- * Webmaster / IndexNow key is provisioned for www.vnvnepal.com.
+ * IndexNow (#50): See `web/src/lib/indexnow.ts` (client helper) and
+ * `server/core/indexnow.py` (Django post_save). Host `{key}.txt` under
+ * `web/public/` when a Bing Webmaster / IndexNow key is provisioned for
+ * www.vnvnepal.com — do not commit a fake key.
  */
 
 export function absoluteUrl(path = "/"): string {

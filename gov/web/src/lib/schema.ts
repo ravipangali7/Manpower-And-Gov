@@ -180,4 +180,66 @@ export function article(input: ArticleInput): JsonLd {
   return node;
 }
 
+export type JobPostingInput = {
+  id: string;
+  title: string;
+  company: string;
+  country: string;
+  vacancies: number;
+  salary: string;
+  contract: string;
+  deadline: string;
+  status: "Open" | "Closed";
+};
+
+/** JobPosting nodes for approved vacancies visible on /jobs (ItemList wrapper). */
+export function jobPostingsList(jobs: JobPostingInput[]): JsonLd {
+  const open = jobs.filter((j) => j.status === "Open");
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Approved foreign employment vacancies",
+    numberOfItems: open.length,
+    itemListElement: open.map((job, index) => {
+      const validThrough = toIsoDateTime(job.deadline);
+      const posting: JsonLd = {
+        "@type": "JobPosting",
+        title: job.title,
+        description: `${job.title} at ${job.company} in ${job.country}. ${job.vacancies} vacancies. Salary: ${job.salary}. Contract: ${job.contract}. Apply before ${job.deadline}.`,
+        hiringOrganization: {
+          "@type": "Organization",
+          name: job.company,
+        },
+        jobLocation: {
+          "@type": "Place",
+          address: {
+            "@type": "PostalAddress",
+            addressCountry: job.country,
+          },
+        },
+        employmentType: "FULL_TIME",
+        identifier: job.id,
+        url: absoluteUrl("/jobs"),
+        industry: "Foreign employment",
+        totalJobOpenings: job.vacancies,
+        baseSalary: {
+          "@type": "MonetaryAmount",
+          value: {
+            "@type": "QuantitativeValue",
+            unitText: job.salary,
+          },
+        },
+      };
+      if (validThrough) {
+        posting.validThrough = validThrough;
+      }
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        item: posting,
+      };
+    }),
+  };
+}
+
 export { absoluteUrl, ORG_ID, OFFICE_ID };

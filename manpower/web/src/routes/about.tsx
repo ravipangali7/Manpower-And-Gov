@@ -11,7 +11,7 @@ import { useSiteData } from "@/hooks/use-site-data";
 import { publicApi } from "@/lib/public-api";
 import { blockMap, CmsPathLink } from "@/lib/cms-content";
 import { loadPageSeo, seoFromCms } from "@/lib/page-seo";
-import { buildBreadcrumbList } from "@/lib/schema";
+import { buildBreadcrumbList, buildVideoObject } from "@/lib/schema";
 import { extractYouTubeId, youtubeThumbnailUrl } from "@/lib/video";
 import teamImg from "@/assets/about-team.jpg";
 import statsBg from "@/assets/stats-bg.jpg";
@@ -210,7 +210,11 @@ function AboutPage() {
             <div className="relative py-16 md:py-20">
               <img
                 src={whyVideo?.image_url || statsBg}
-                alt=""
+                alt={
+                  whyVideo?.image_url
+                    ? whyVideo.heading || whyVideo.subheading || "Why choose Vision & Value Overseas"
+                    : ""
+                }
                 loading="lazy"
                 width={1920}
                 height={700}
@@ -249,29 +253,26 @@ function AboutPage() {
                         autoPlay
                       />
                     </div>
-                    {extractYouTubeId(whyVideo.video_url) ? (
-                      <JsonLd
-                        data={{
-                          "@context": "https://schema.org",
-                          "@type": "VideoObject",
-                          name:
-                            whyVideo.body_2 && whyVideo.body
-                              ? `${whyVideo.body_2} — ${whyVideo.body}`
-                              : whyVideo.heading || "Vision & Value Overseas introductory video",
-                          description: whyVideo.heading || whyVideo.body || undefined,
-                          thumbnailUrl:
-                            whyVideo.image_url ||
-                            youtubeThumbnailUrl(whyVideo.video_url) ||
-                            undefined,
-                          embedUrl: `https://www.youtube.com/embed/${extractYouTubeId(whyVideo.video_url)}`,
-                          contentUrl: whyVideo.video_url,
-                          publisher: {
-                            "@type": "Organization",
-                            name: company.name,
-                          },
-                        }}
-                      />
-                    ) : null}
+                    {(() => {
+                      const ytId = extractYouTubeId(whyVideo.video_url);
+                      if (!ytId) return null;
+                      const videoName =
+                        whyVideo.body_2 && whyVideo.body
+                          ? `${whyVideo.body_2} — ${whyVideo.body}`
+                          : whyVideo.heading || "Vision & Value Overseas introductory video";
+                      const videoDescription =
+                        whyVideo.heading || whyVideo.body || whyVideo.subheading || "";
+                      const thumbnail =
+                        whyVideo.image_url || youtubeThumbnailUrl(whyVideo.video_url) || "";
+                      const videoLd = buildVideoObject({
+                        name: videoName,
+                        description: videoDescription,
+                        thumbnailUrl: thumbnail,
+                        contentUrl: whyVideo.video_url,
+                        embedUrl: `https://www.youtube.com/embed/${ytId}`,
+                      });
+                      return videoLd ? <JsonLd data={videoLd} /> : null;
+                    })()}
                   </>
                 ) : null}
               </div>
