@@ -308,6 +308,13 @@ class UserViewSet(AdminModelViewSet):
             return qs.filter(id=self.request.user.id)
         return qs
 
+    def perform_create(self, serializer):
+        if not self.request.user.is_superuser:
+            raise PermissionDenied("Only superusers can create staff accounts.")
+        # CMS login requires is_staff; default new accounts to staff when omitted.
+        is_staff = serializer.validated_data.get("is_staff", True)
+        serializer.save(is_staff=is_staff)
+
     def perform_destroy(self, instance):
         if instance == self.request.user:
             raise PermissionDenied("You cannot delete your own account.")

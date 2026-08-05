@@ -43,6 +43,7 @@ import { Route as AdminOverseasRecruitmentRouteImport } from './routes/admin/ove
 import { Route as AdminRegistrationsRouteImport } from './routes/admin/registrations'
 import { Route as AdminServicesRouteImport } from './routes/admin/services'
 import { Route as AdminSiteSettingsRouteImport } from './routes/admin/site-settings'
+import { Route as AdminUsersRouteImport } from './routes/admin/users'
 import { Route as NewsIndexRouteImport } from './routes/news.index'
 import { Route as NewsSlugRouteImport } from './routes/news.$slug'
 import { Route as PagesSlugRouteImport } from './routes/pages.$slug'
@@ -220,6 +221,11 @@ const AdminSiteSettingsRoute = AdminSiteSettingsRouteImport.update({
   path: '/site-settings',
   getParentRoute: () => AdminRouteRoute,
 } as any)
+const AdminUsersRoute = AdminUsersRouteImport.update({
+  id: '/users',
+  path: '/users',
+  getParentRoute: () => AdminRouteRoute,
+} as any)
 const NewsIndexRoute = NewsIndexRouteImport.update({
   id: '/news/',
   path: '/news/',
@@ -281,6 +287,7 @@ export interface FileRoutesByFullPath {
   '/admin/registrations': typeof AdminRegistrationsRoute
   '/admin/services': typeof AdminServicesRoute
   '/admin/site-settings': typeof AdminSiteSettingsRoute
+  '/admin/users': typeof AdminUsersRoute
   '/news/$slug': typeof NewsSlugRoute
   '/pages/$slug': typeof PagesSlugRoute
   '/services/overseas-recruitment': typeof ServicesOverseasRecruitmentRoute
@@ -320,6 +327,7 @@ export interface FileRoutesByTo {
   '/admin/registrations': typeof AdminRegistrationsRoute
   '/admin/services': typeof AdminServicesRoute
   '/admin/site-settings': typeof AdminSiteSettingsRoute
+  '/admin/users': typeof AdminUsersRoute
   '/news/$slug': typeof NewsSlugRoute
   '/pages/$slug': typeof PagesSlugRoute
   '/services/overseas-recruitment': typeof ServicesOverseasRecruitmentRoute
@@ -362,6 +370,7 @@ export interface FileRoutesById {
   '/admin/registrations': typeof AdminRegistrationsRoute
   '/admin/services': typeof AdminServicesRoute
   '/admin/site-settings': typeof AdminSiteSettingsRoute
+  '/admin/users': typeof AdminUsersRoute
   '/news/$slug': typeof NewsSlugRoute
   '/pages/$slug': typeof PagesSlugRoute
   '/services/overseas-recruitment': typeof ServicesOverseasRecruitmentRoute
@@ -405,6 +414,7 @@ export interface FileRouteTypes {
     | '/admin/registrations'
     | '/admin/services'
     | '/admin/site-settings'
+    | '/admin/users'
     | '/news/$slug'
     | '/pages/$slug'
     | '/services/overseas-recruitment'
@@ -444,6 +454,7 @@ export interface FileRouteTypes {
     | '/admin/registrations'
     | '/admin/services'
     | '/admin/site-settings'
+    | '/admin/users'
     | '/news/$slug'
     | '/pages/$slug'
     | '/services/overseas-recruitment'
@@ -485,6 +496,7 @@ export interface FileRouteTypes {
     | '/admin/registrations'
     | '/admin/services'
     | '/admin/site-settings'
+    | '/admin/users'
     | '/news/$slug'
     | '/pages/$slug'
     | '/services/overseas-recruitment'
@@ -754,6 +766,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminSiteSettingsRouteImport
       parentRoute: typeof AdminRouteRoute
     }
+    '/admin/users': {
+      id: '/admin/users'
+      path: '/users'
+      fullPath: '/admin/users'
+      preLoaderRoute: typeof AdminUsersRouteImport
+      parentRoute: typeof AdminRouteRoute
+    }
     '/news/': {
       id: '/news/'
       path: '/news'
@@ -811,6 +830,7 @@ interface AdminRouteRouteChildren {
   AdminRegistrationsRoute: typeof AdminRegistrationsRoute
   AdminServicesRoute: typeof AdminServicesRoute
   AdminSiteSettingsRoute: typeof AdminSiteSettingsRoute
+  AdminUsersRoute: typeof AdminUsersRoute
   AdminIndexRoute: typeof AdminIndexRoute
 }
 
@@ -833,6 +853,7 @@ const AdminRouteRouteChildren: AdminRouteRouteChildren = {
   AdminRegistrationsRoute: AdminRegistrationsRoute,
   AdminServicesRoute: AdminServicesRoute,
   AdminSiteSettingsRoute: AdminSiteSettingsRoute,
+  AdminUsersRoute: AdminUsersRoute,
   AdminIndexRoute: AdminIndexRoute,
 }
 

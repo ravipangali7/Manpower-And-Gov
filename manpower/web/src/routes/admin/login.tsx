@@ -14,55 +14,23 @@ export const Route = createFileRoute("/admin/login")({
   component: AdminLoginPage,
 });
 
-/** Known local Super Admin credentials (dev). Tried automatically on page load. */
-const AUTO_LOGIN_CANDIDATES = [
-  { username: "admin", password: "admin123" },
-  { username: "admin@admin.com", password: "admin123" },
-  { username: "smoketest", password: "admin123" },
-] as const;
-
-async function tryAutoLogin(): Promise<boolean> {
-  for (const creds of AUTO_LOGIN_CANDIDATES) {
-    try {
-      await login(creds.username, creds.password);
-      return true;
-    } catch {
-      // try next
-    }
-  }
-  return false;
-}
-
 function AdminLoginPage() {
   const navigate = useNavigate();
-  const [username, setUsername] = useState("admin");
-  const [password, setPassword] = useState("admin123");
-  const [loading, setLoading] = useState(true);
-  const [autoFailed, setAutoFailed] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [checking, setChecking] = useState(true);
 
   useEffect(() => {
     let cancelled = false;
-
-    async function enterAdmin() {
+    async function redirectIfAuthed() {
       if (isLoggedIn()) {
         await navigate({ to: "/admin", replace: true });
         return;
       }
-
-      const ok = await tryAutoLogin();
-      if (cancelled) return;
-
-      if (ok) {
-        toast.success("Signed in as Super Admin");
-        await navigate({ to: "/admin", replace: true });
-        return;
-      }
-
-      setAutoFailed(true);
-      setLoading(false);
+      if (!cancelled) setChecking(false);
     }
-
-    void enterAdmin();
+    void redirectIfAuthed();
     return () => {
       cancelled = true;
     };
@@ -72,17 +40,10 @@ function AdminLoginPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      await login(username, password);
+      await login(username.trim(), password);
       toast.success("Signed in");
       await navigate({ to: "/admin" });
     } catch (err) {
-      // Last resort: any submitted credentials → try known Super Admin accounts
-      const ok = await tryAutoLogin();
-      if (ok) {
-        toast.success("Signed in as Super Admin");
-        await navigate({ to: "/admin" });
-        return;
-      }
       const message = err instanceof ApiError ? err.message : "Login failed";
       toast.error(message);
     } finally {
@@ -90,7 +51,7 @@ function AdminLoginPage() {
     }
   }
 
-  if (loading && !autoFailed) {
+  if (checking) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-brand-red-soft via-section to-brand-blue/10 px-4">
         <Card className="w-full max-w-md border-primary/15 shadow-lg shadow-primary/10">
@@ -100,7 +61,7 @@ function AdminLoginPage() {
             </div>
             <div>
               <CardTitle className="text-brand-blue-dark">Super Admin</CardTitle>
-              <CardDescription>Signing you in…</CardDescription>
+              <CardDescription>Loading…</CardDescription>
             </div>
           </CardHeader>
         </Card>
@@ -130,6 +91,7 @@ function AdminLoginPage() {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
+                autoFocus
               />
             </div>
             <div className="space-y-2">

@@ -16,6 +16,7 @@ import {
   Newspaper,
   Scale,
   Settings,
+  Shield,
   UserPlus,
   Users,
   Workflow,
@@ -73,6 +74,7 @@ const navGroups = [
     items: [
       { to: "/admin/site-settings", label: "Site settings", icon: Settings },
       { to: "/admin/content", label: "Menus & SEO", icon: Menu },
+      { to: "/admin/users", label: "Staff users", icon: Shield },
     ],
   },
 ] as const;

@@ -187,6 +187,19 @@ export type RegistrationSubmission = {
   created_at: string;
 };
 
+export type StaffUser = {
+  id: number;
+  username: string;
+  email: string;
+  first_name: string;
+  last_name: string;
+  is_staff: boolean;
+  is_superuser: boolean;
+  is_active: boolean;
+  date_joined?: string;
+  password?: string;
+};
+
 type CrudResource<T> = {
   list: (params?: Record<string, string>) => Promise<T[]>;
   get: (id: number) => Promise<T>;
@@ -246,7 +259,7 @@ export const adminApi = {
   pages: crud<OrderedItem>("/admin/pages"),
   contentBlocks: crud<OrderedItem>("/admin/content-blocks"),
   media: crud<OrderedItem>("/admin/media"),
-  users: crud<OrderedItem>("/admin/users"),
+  users: crud<StaffUser>("/admin/users"),
   siteSettings: {
     get: () => api<SiteSettings>("/admin/site-settings/"),
     update: (body: Partial<SiteSettings> | FormData, create = false) =>
