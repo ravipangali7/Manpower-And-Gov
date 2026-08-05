@@ -8,7 +8,7 @@ function resolveSiteUrl(): string {
     typeof import.meta !== "undefined"
       ? (import.meta as ImportMeta & { env?: { VITE_SITE_URL?: string } }).env?.VITE_SITE_URL
       : undefined;
-  const raw = envUrl || "https://www.dofe.gov.np";
+  const raw = envUrl || "https://gov.luckyuser365.com";
   return String(raw).replace(/\/$/, "").replace(/^http:\/\//i, "https://");
 }
 

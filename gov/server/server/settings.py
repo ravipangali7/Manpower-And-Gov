@@ -1,4 +1,3 @@
-import os
 """
 Django settings for server project.
 
@@ -11,22 +10,49 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
+import os
 from pathlib import Path
+
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Load server/.env (and fall back to process env already set by the host).
+load_dotenv(BASE_DIR / ".env")
+
+
+def env_bool(name: str, default: bool = False) -> bool:
+    raw = os.environ.get(name)
+    if raw is None:
+        return default
+    return raw.strip().lower() in {"1", "true", "yes", "on"}
+
+
+def env_list(name: str, default: list[str] | None = None) -> list[str]:
+    raw = os.environ.get(name, "")
+    if not raw.strip():
+        return list(default or [])
+    return [part.strip() for part in raw.split(",") if part.strip()]
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-))+nf3qe&@x0p*))at156u-$o_4-8sf0^cvl@1@g275gdmv8s+'
+SECRET_KEY = os.environ.get(
+    "SECRET_KEY",
+    "django-insecure-))+nf3qe&@x0p*))at156u-$o_4-8sf0^cvl@1@g275gdmv8s+",
+)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env_bool("DEBUG", True)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = env_list("ALLOWED_HOSTS", ["*"])
+
+# Public frontend origin (used by IndexNow + CORS/CSRF helpers)
+FRONTEND_URL = os.environ.get("FRONTEND_URL", "https://gov.luckyuser365.com").rstrip("/")
+SITE_URL = os.environ.get("SITE_URL", FRONTEND_URL).rstrip("/")
 
 
 # Application definition
@@ -61,7 +87,18 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ],
 }
-CORS_ALLOW_ALL_ORIGINS = True
+
+_cors_origins = env_list("CORS_ALLOWED_ORIGINS", [FRONTEND_URL])
+if _cors_origins:
+    CORS_ALLOWED_ORIGINS = _cors_origins
+    CORS_ALLOW_ALL_ORIGINS = False
+else:
+    CORS_ALLOW_ALL_ORIGINS = True
+
+CSRF_TRUSTED_ORIGINS = env_list(
+    "CSRF_TRUSTED_ORIGINS",
+    [FRONTEND_URL] if FRONTEND_URL.startswith("http") else [],
+)
 
 ROOT_URLCONF = 'server.urls'
 
@@ -125,7 +162,7 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+# Static files (CSS, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'

@@ -14,20 +14,44 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 from datetime import timedelta
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv(BASE_DIR / '.env')
+
+
+def env_bool(name: str, default: bool = False) -> bool:
+    raw = os.getenv(name)
+    if raw is None:
+        return default
+    return raw.strip().lower() in {'1', 'true', 'yes', 'on'}
+
+
+def env_list(name: str, default: list[str] | None = None) -> list[str]:
+    raw = os.getenv(name)
+    if raw is None or not raw.strip():
+        return list(default or [])
+    return [item.strip() for item in raw.split(',') if item.strip()]
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dx)rl@1tpgrgd*3@9%4-0vr-gub8f-lpyda38#-uo9(&qm^4%l'
+SECRET_KEY = os.getenv(
+    'SECRET_KEY',
+    'django-insecure-dx)rl@1tpgrgd*3@9%4-0vr-gub8f-lpyda38#-uo9(&qm^4%l',
+)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env_bool('DEBUG', True)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = env_list('ALLOWED_HOSTS', ['*'])
+
+BACKEND_URL = os.getenv('BACKEND_URL', 'https://manpowerapi.luckyuser365.com').rstrip('/')
+FRONTEND_URL = os.getenv('FRONTEND_URL', 'https://manpower.luckyuser365.com').rstrip('/')
 
 
 # Application definition
@@ -74,17 +98,33 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = env_list(
+    'CORS_ALLOWED_ORIGINS',
+    [
+        FRONTEND_URL,
+        'http://localhost:8080',
+        'http://127.0.0.1:8080',
+    ],
+)
+# Prefer explicit origins from .env; fall back to allow-all only in DEBUG when unset.
+CORS_ALLOW_ALL_ORIGINS = env_bool('CORS_ALLOW_ALL_ORIGINS', False) or (
+    DEBUG and not os.getenv('CORS_ALLOWED_ORIGINS')
+)
 
 LOGIN_URL = '/admin/login/'
 LOGIN_REDIRECT_URL = '/admin/'
 
-CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:8080',
-    'http://127.0.0.1:8080',
-    'http://localhost:8000',
-    'http://127.0.0.1:8000',
-]
+CSRF_TRUSTED_ORIGINS = env_list(
+    'CSRF_TRUSTED_ORIGINS',
+    [
+        FRONTEND_URL,
+        BACKEND_URL,
+        'http://localhost:8080',
+        'http://127.0.0.1:8080',
+        'http://localhost:8000',
+        'http://127.0.0.1:8000',
+    ],
+)
 
 # Jazzmin — Super Admin panel branding
 JAZZMIN_SETTINGS = {
@@ -95,7 +135,7 @@ JAZZMIN_SETTINGS = {
     'copyright': 'Vision & Value Overseas Pvt. Ltd.',
     'search_model': ['auth.User', 'core.Job', 'core.NewsArticle'],
     'topmenu_links': [
-        {'name': 'Site', 'url': 'http://localhost:8080/', 'new_window': True},
+        {'name': 'Site', 'url': f'{FRONTEND_URL}/', 'new_window': True},
     ],
     'show_sidebar': True,
     'navigation_expanded': True,

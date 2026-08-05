@@ -7,9 +7,37 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  // Skip Nitro so TanStack can prerender a classic SPA shell (index.html).
+  // Nitro's cloudflare server entry (index.mjs) breaks SPA prerender, which
+  // expects dist/server/server.js.
+  nitro: false,
+  vite: {
+    build: {
+      outDir: "dist",
+      emptyOutDir: true,
+    },
+    environments: {
+      client: {
+        build: {
+          outDir: "dist",
+        },
+      },
+      server: {
+        build: {
+          outDir: "dist/server",
+        },
+      },
+    },
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
     server: { entry: "server" },
+    // Prerender SPA shell as dist/index.html for static hosting.
+    spa: {
+      enabled: true,
+      prerender: {
+        outputPath: "/index",
+      },
+    },
   },
 });

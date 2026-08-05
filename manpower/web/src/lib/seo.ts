@@ -10,7 +10,7 @@ import {
 export const SITE_URL = (
   (typeof import.meta !== "undefined" && import.meta.env?.VITE_SITE_URL) ||
   CONFIG_SITE_URL ||
-  "https://www.vnvnepal.com"
+  "https://manpower.luckyuser365.com"
 ).replace(/\/$/, "");
 
 export { SITE_BRAND, SITE_NAME, DEFAULT_OG_IMAGE_PATH };

@@ -5,22 +5,17 @@
  * `VITE_API_URL` is set to merge CMS URLs into FE tooling or build steps.
  */
 
-const API_BASE = () =>
-  String(
-    (typeof import.meta !== "undefined" &&
-      (import.meta as ImportMeta & { env?: { VITE_API_URL?: string } }).env?.VITE_API_URL) ||
-      "",
-  ).replace(/\/$/, "");
+import { getApiBase } from "./api";
 
 export type SitemapUrlRow = { loc: string; lastmod?: string | null };
 
 /** Fetch published URL inventory from Django. Returns [] if API unset/unreachable. */
 export async function fetchSitemapUrls(includeStatic = true): Promise<SitemapUrlRow[]> {
-  const base = API_BASE();
+  const base = getApiBase();
   if (!base) return [];
   try {
     const qs = includeStatic ? "" : "?include_static=0";
-    const res = await fetch(`${base}/api/public/sitemap-urls/${qs}`);
+    const res = await fetch(`${base}/public/sitemap-urls/${qs}`);
     if (!res.ok) return [];
     const data = (await res.json()) as { urls?: SitemapUrlRow[] } | SitemapUrlRow[];
     if (Array.isArray(data)) return data;
