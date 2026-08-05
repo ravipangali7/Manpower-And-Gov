@@ -3,7 +3,3 @@
 /*/build
 /*/logs
 /*/**/__pycache__
-
-# Environment
-**/.env
-!**/.env.example
