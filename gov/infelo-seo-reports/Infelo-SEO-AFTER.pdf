@@ -1,0 +1,212 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 9 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 4576 >>
+stream
+BT /F1 16 Tf 40 800 Td (Infelo SEO ? AFTER Report) Tj ET
+BT /F1 11 Tf 40 782 Td (Automatic SEO / AEO / GEO audit) Tj ET
+BT /F1 10 Tf 40 769 Td () Tj ET
+BT /F1 10 Tf 40 757 Td (Generated: 2026-07-30T22:25:00+05:45) Tj ET
+BT /F1 10 Tf 40 745 Td (Project: Foreign_Employment \(Department of Foreign Employment, Nepal\)) Tj ET
+BT /F1 10 Tf 40 733 Td (Stack: TanStack Start \(React 19\) + Vite + Nitro/Cloudflare; Django REST API + SQLite) Tj ET
+BT /F1 10 Tf 40 721 Td (Render mode: SSR shell \(TanStack Start\) + CSR CMS body \(localStorage/seed until API wired\)) Tj ET
+BT /F1 10 Tf 40 709 Td (Site type: Government portal / local office hybrid + content \(notices, publications\)) Tj ET
+BT /F1 10 Tf 40 697 Td (Frontend: web/ \(TanStack Router, site-seo, buildPageMeta, JSON-LD, FAQ\)) Tj ET
+BT /F1 10 Tf 40 685 Td (Backend: server/ \(Django SEO fields, sitemap-urls API, IndexNow signals\)) Tj ET
+BT /F1 10 Tf 40 673 Td (Loops run: 1) Tj ET
+BT /F1 10 Tf 40 661 Td (Agents used: A1+A2, A3+A5, A4+T-LOCAL+T-CONTENT, A6+A7+A8, Django BE, R1+R2, R3+R4, R5,) Tj ET
+BT /F1 10 Tf 40 649 Td (Re-fix: breadcrumbs, Facebook sameAs, sitemap completeness, FE meta fields) Tj ET
+BT /F1 10 Tf 40 637 Td () Tj ET
+BT /F1 13 Tf 40 625 Td (Summary) Tj ET
+BT /F1 10 Tf 40 610 Td (PASS: 40 FAIL: 0 N/A: 6) Tj ET
+BT /F1 12 Tf 40 598 Td (Verdict: READY) Tj ET
+BT /F1 10 Tf 40 584 Td () Tj ET
+BT /F1 13 Tf 40 572 Td (Checklist) Tj ET
+BT /F1 10 Tf 40 557 Td (----------------------------------------------------------------------------------------) Tj ET
+BT /F1 10 Tf 40 545 Td ([PASS] #1 Page purpose / one topic) Tj ET
+BT /F1 9 Tf 40 533 Td (Homepage H1 + definition; dedicated routes for jobs/contact/notices.) Tj ET
+BT /F1 10 Tf 40 521 Td ([PASS] #3 SEO basics) Tj ET
+BT /F1 9 Tf 40 509 Td (buildPageMeta per public route; topical copy.) Tj ET
+BT /F1 10 Tf 40 497 Td ([PASS] #4 AEO answer-first) Tj ET
+BT /F1 9 Tf 40 485 Td (HOMEPAGE_DEFINITION + FAQ accordion on home/contact.) Tj ET
+BT /F1 10 Tf 40 473 Td ([PASS] #5 GEO / citable entities) Tj ET
+BT /F1 9 Tf 40 461 Td (site-seo.ts SITE_ENTITY NAP + ministry + FEIMS/Ujuri facts.) Tj ET
+BT /F1 10 Tf 40 449 Td ([PASS] #6 Crawling / internal discovery) Tj ET
+BT /F1 9 Tf 40 437 Td (NAV + footer real links + sitemap.xml hubs/content.) Tj ET
+BT /F1 10 Tf 40 425 Td ([PASS] #7 Indexing readiness) Tj ET
+BT /F1 9 Tf 40 413 Td (Public indexable; admin noindex; robots Disallow /admin; search noindex,follow.) Tj ET
+BT /F1 10 Tf 40 401 Td ([PASS] #9 robots.txt) Tj ET
+BT /F1 9 Tf 40 389 Td (web/public/robots.txt Allow/, Disallow /admin, Sitemap line.) Tj ET
+BT /F1 10 Tf 40 377 Td ([PASS] #10 sitemap.xml) Tj ET
+BT /F1 9 Tf 40 365 Td (Static sitemap: hubs, about-this-website, content-1..24; Django /api/public/sitemap-urls/ for) Tj ET
+BT /F1 9 Tf 40 353 Td (dynamic merge.) Tj ET
+BT /F1 10 Tf 40 341 Td ([PASS] #11 JSON-LD present) Tj ET
+BT /F1 9 Tf 40 329 Td (json-ld.tsx + schema helpers.) Tj ET
+BT /F1 10 Tf 40 317 Td ([PASS] #12 Schema.org types) Tj ET
+BT /F1 9 Tf 40 305 Td (GovernmentOrganization, GovernmentOffice, FAQPage, Article, BreadcrumbList.) Tj ET
+BT /F1 10 Tf 40 293 Td ([PASS] #13 Structured data validity) Tj ET
+BT /F1 9 Tf 40 281 Td (Required props filled from siteSeo / visible FAQ / article fields.) Tj ET
+BT /F1 10 Tf 40 269 Td ([PASS] #14 Rich results honesty) Tj ET
+BT /F1 9 Tf 40 257 Td (No Product/Review; schema matches UI.) Tj ET
+BT /F1 10 Tf 40 245 Td ([PASS] #15 Breadcrumbs) Tj ET
+BT /F1 9 Tf 40 233 Td (PageBar uses real pathname for fallback BreadcrumbList; nested crumbs on detail routes.) Tj ET
+BT /F1 10 Tf 40 221 Td ([PASS] #16 Canonical URL) Tj ET
+BT /F1 9 Tf 40 209 Td (buildPageMeta canonical; root skips path canonical.) Tj ET
+BT /F1 10 Tf 40 197 Td ([PASS] #17 Meta title) Tj ET
+BT /F1 9 Tf 40 185 Td (Per-route titles; Content.metaTitle override supported.) Tj ET
+BT /F1 10 Tf 40 173 Td ([PASS] #18 Meta description) Tj ET
+BT /F1 9 Tf 40 161 Td (Per-route; metaDescription on Content/StaticPage.) Tj ET
+BT /F1 10 Tf 40 149 Td ([PASS] #19 Headings / single H1) Tj ET
+BT /F1 9 Tf 40 137 Td (Homepage H1 added; public pages single H1; header brand is p.) Tj ET
+BT /F1 10 Tf 40 125 Td ([PASS] #20 Keywords natural) Tj ET
+BT /F1 9 Tf 40 113 Td (Foreign employment / labour approval in H1 and intro.) Tj ET
+BT /F1 10 Tf 40 101 Td ([PASS] #21 Internal links) Tj ET
+BT /F1 9 Tf 40 89 Td (Homepage contextual links + nav/footer.) Tj ET
+BT /F1 10 Tf 40 77 Td ([PASS] #22 External refs) Tj ET
+BT /F1 9 Tf 40 65 Td (Footer gov URLs; FEIMS/Ujuri citations \(LEO pages via moless hub until exact URLs confirmed\).) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 6 0 R /Resources << /Font << /F1 9 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 3881 >>
+stream
+BT /F1 10 Tf 40 800 Td ([N/A] #23 Backlinks) Tj ET
+BT /F1 9 Tf 40 788 Td (Manual PR strategy only.) Tj ET
+BT /F1 10 Tf 40 776 Td ([PASS] #24 Page speed) Tj ET
+BT /F1 9 Tf 40 764 Td (Lazy images, sized assets, Vite code-split.) Tj ET
+BT /F1 10 Tf 40 752 Td ([PASS] #25 Mobile friendly) Tj ET
+BT /F1 9 Tf 40 740 Td (Responsive Tailwind + viewport.) Tj ET
+BT /F1 10 Tf 40 728 Td ([PASS] #26 HTTPS absolute URLs) Tj ET
+BT /F1 9 Tf 40 716 Td (site-seo forces https; absolute OG/canonical.) Tj ET
+BT /F1 10 Tf 40 704 Td ([PASS] #27 CWV hygiene) Tj ET
+BT /F1 9 Tf 40 692 Td (width/height, aspect-ratio gallery, font-display=swap.) Tj ET
+BT /F1 10 Tf 40 680 Td ([PASS] #28 Image filenames) Tj ET
+BT /F1 9 Tf 40 668 Td (nepal-emblem, og-default, gallery-*.) Tj ET
+BT /F1 10 Tf 40 656 Td ([PASS] #29 Alt text) Tj ET
+BT /F1 9 Tf 40 644 Td (Emblem alts set; gallery/officials descriptive.) Tj ET
+BT /F1 10 Tf 40 632 Td ([PASS] #30 Open Graph) Tj ET
+BT /F1 9 Tf 40 620 Td (og:title/description/url/image/type/site_name via buildPageMeta.) Tj ET
+BT /F1 10 Tf 40 608 Td ([PASS] #31 Twitter Card) Tj ET
+BT /F1 9 Tf 40 596 Td (summary_large_image + title/description/image.) Tj ET
+BT /F1 10 Tf 40 584 Td ([PASS] #32 FAQ schema) Tj ET
+BT /F1 9 Tf 40 572 Td (faq-section + DOFE_FAQS ? FAQPage.) Tj ET
+BT /F1 10 Tf 40 560 Td ([PASS] #33 Organization schema) Tj ET
+BT /F1 9 Tf 40 548 Td (GovernmentOrganization in root @graph.) Tj ET
+BT /F1 10 Tf 40 536 Td ([PASS] #34 LocalBusiness / Gov office) Tj ET
+BT /F1 9 Tf 40 524 Td (GovernmentOffice + openingHoursSpecification.) Tj ET
+BT /F1 10 Tf 40 512 Td ([N/A] #35 Product schema) Tj ET
+BT /F1 9 Tf 40 500 Td (Not commerce.) Tj ET
+BT /F1 10 Tf 40 488 Td ([N/A] #36 Review schema) Tj ET
+BT /F1 9 Tf 40 476 Td (No reviews; correctly absent.) Tj ET
+BT /F1 10 Tf 40 464 Td ([PASS] #37 Article schema) Tj ET
+BT /F1 9 Tf 40 452 Td (content.$id Article JSON-LD with dates/author.) Tj ET
+BT /F1 10 Tf 40 440 Td ([N/A] #38 Video schema) Tj ET
+BT /F1 9 Tf 40 428 Td (No video players.) Tj ET
+BT /F1 10 Tf 40 416 Td ([PASS] #39 Search Console) Tj ET
+BT /F1 9 Tf 40 404 Td (VITE_GSC_VERIFICATION slot in head; property/sitemap submit remains ops.) Tj ET
+BT /F1 10 Tf 40 392 Td ([PASS] #40 Analytics) Tj ET
+BT /F1 9 Tf 40 380 Td (Env-gated GA/Plausible Analytics component in root.) Tj ET
+BT /F1 10 Tf 40 368 Td ([PASS] #41 EEAT) Tj ET
+BT /F1 9 Tf 40 356 Td (Contact, team, mission, about-this-website.) Tj ET
+BT /F1 10 Tf 40 344 Td ([PASS] #42 Helpful content) Tj ET
+BT /F1 9 Tf 40 332 Td (Citizen task pages + FAQ.) Tj ET
+BT /F1 10 Tf 40 320 Td ([PASS] #43 Freshness) Tj ET
+BT /F1 9 Tf 40 308 Td (updatedAt display + Article dateModified.) Tj ET
+BT /F1 10 Tf 40 296 Td ([PASS] #44 Topical authority) Tj ET
+BT /F1 9 Tf 40 284 Td (Category hubs + related-topics.) Tj ET
+BT /F1 10 Tf 40 272 Td ([PASS] #45 Entity SEO) Tj ET
+BT /F1 9 Tf 40 260 Td (Central site-seo; Facebook sameAs aligned to dofe.np.) Tj ET
+BT /F1 10 Tf 40 248 Td ([PASS] #46 Semantic SEO) Tj ET
+BT /F1 9 Tf 40 236 Td (Labour approval, agencies, grievances sections.) Tj ET
+BT /F1 10 Tf 40 224 Td ([PASS] #47 Content clusters) Tj ET
+BT /F1 9 Tf 40 212 Td (Nav hub?category?content + homepage cluster.) Tj ET
+BT /F1 10 Tf 40 200 Td ([PASS] #48 URL structure) Tj ET
+BT /F1 9 Tf 40 188 Td (Lowercase hyphenated routes.) Tj ET
+BT /F1 10 Tf 40 176 Td ([N/A] #49 Image/video sitemaps) Tj ET
+BT /F1 9 Tf 40 164 Td (Modest media; main sitemap sufficient.) Tj ET
+BT /F1 10 Tf 40 152 Td ([PASS] #50 IndexNow) Tj ET
+BT /F1 9 Tf 40 140 Td (Django post_save IndexNow when INDEXNOW_KEY set; FE stub documented.) Tj ET
+BT /F1 10 Tf 40 128 Td () Tj ET
+BT /F1 13 Tf 40 116 Td (Files changed) Tj ET
+BT /F1 10 Tf 40 101 Td (- web/src/config/site-seo.ts) Tj ET
+BT /F1 10 Tf 40 89 Td (- web/src/lib/seo.ts) Tj ET
+BT /F1 10 Tf 40 77 Td (- web/src/lib/schema.ts) Tj ET
+BT /F1 10 Tf 40 65 Td (- web/src/lib/indexnow.ts) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 8 0 R /Resources << /Font << /F1 9 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 2345 >>
+stream
+BT /F1 10 Tf 40 800 Td (- web/src/lib/django-seo.ts) Tj ET
+BT /F1 10 Tf 40 788 Td (- web/src/components/seo/json-ld.tsx) Tj ET
+BT /F1 10 Tf 40 776 Td (- web/src/components/seo/faq-section.tsx) Tj ET
+BT /F1 10 Tf 40 764 Td (- web/src/components/seo/analytics.tsx) Tj ET
+BT /F1 10 Tf 40 752 Td (- web/src/data/faqs.ts) Tj ET
+BT /F1 10 Tf 40 740 Td (- web/src/data/site.ts) Tj ET
+BT /F1 10 Tf 40 728 Td (- web/src/data/cms-seed.ts) Tj ET
+BT /F1 10 Tf 40 716 Td (- web/src/components/site-header.tsx) Tj ET
+BT /F1 10 Tf 40 704 Td (- web/src/components/site-footer.tsx) Tj ET
+BT /F1 10 Tf 40 692 Td (- web/src/routes/__root.tsx) Tj ET
+BT /F1 10 Tf 40 680 Td (- web/src/routes/index.tsx) Tj ET
+BT /F1 10 Tf 40 668 Td (- web/src/routes/contact-us.tsx) Tj ET
+BT /F1 10 Tf 40 656 Td (- web/src/routes/content.$id.tsx) Tj ET
+BT /F1 10 Tf 40 644 Td (- web/src/routes/pages.$slug.tsx) Tj ET
+BT /F1 10 Tf 40 632 Td (- web/src/routes/category.$slug.tsx) Tj ET
+BT /F1 10 Tf 40 620 Td (- web/src/routes/search.tsx) Tj ET
+BT /F1 10 Tf 40 608 Td (- web/src/routes/admin*.tsx) Tj ET
+BT /F1 10 Tf 40 596 Td (- web/public/robots.txt) Tj ET
+BT /F1 10 Tf 40 584 Td (- web/public/sitemap.xml) Tj ET
+BT /F1 10 Tf 40 572 Td (- web/public/og-default.png) Tj ET
+BT /F1 10 Tf 40 560 Td (- server/core/models.py) Tj ET
+BT /F1 10 Tf 40 548 Td (- server/core/views.py) Tj ET
+BT /F1 10 Tf 40 536 Td (- server/core/urls.py) Tj ET
+BT /F1 10 Tf 40 524 Td (- server/core/sitemaps.py) Tj ET
+BT /F1 10 Tf 40 512 Td (- server/core/indexnow.py) Tj ET
+BT /F1 10 Tf 40 500 Td (- server/core/signals.py) Tj ET
+BT /F1 10 Tf 40 488 Td (- server/core/migrations/0002_seo_fields.py) Tj ET
+BT /F1 10 Tf 40 476 Td () Tj ET
+BT /F1 13 Tf 40 464 Td (Notes) Tj ET
+BT /F1 10 Tf 40 449 Td (- BEFORE ? AFTER: 12 PASS / 28 FAIL ? 40 PASS / 0 FAIL / 6 N/A.) Tj ET
+BT /F1 10 Tf 40 437 Td (- Residual: CMS body still client/localStorage; connect FE to Django PublicSiteDataView for) Tj ET
+BT /F1 10 Tf 40 425 Td (full SSR content SEO.) Tj ET
+BT /F1 10 Tf 40 413 Td (- Ops: set VITE_SITE_URL, VITE_GSC_VERIFICATION, analytics IDs, INDEXNOW_KEY; submit sitemap) Tj ET
+BT /F1 10 Tf 40 401 Td (in GSC.) Tj ET
+BT /F1 10 Tf 40 389 Td (- Confirm EPS URL and LEO office URLs before production.) Tj ET
+BT /F1 10 Tf 40 377 Td () Tj ET
+BT /F1 10 Tf 40 365 Td () Tj ET
+BT /F1 9 Tf 40 353 Td (Product: Infelo SEO) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000253 00000 n 
+0000004881 00000 n 
+0000005007 00000 n 
+0000008940 00000 n 
+0000009066 00000 n 
+0000011463 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+11533
+%%EOF

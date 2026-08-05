@@ -1,0 +1,207 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 9 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 4271 >>
+stream
+BT /F1 16 Tf 40 800 Td (Infelo SEO ? AFTER Report) Tj ET
+BT /F1 11 Tf 40 782 Td (Automatic SEO / AEO / GEO audit) Tj ET
+BT /F1 10 Tf 40 769 Td () Tj ET
+BT /F1 10 Tf 40 757 Td (Generated: 2026-07-30T16:45:00+00:00) Tj ET
+BT /F1 10 Tf 40 745 Td (Project: Vision & Value Overseas \(VNVNEPAL\) ? ethical overseas manpower recruitment agency,) Tj ET
+BT /F1 10 Tf 40 733 Td (Kathmandu) Tj ET
+BT /F1 10 Tf 40 721 Td (Stack: TanStack Start \(React 19 + Vite 8 + Nitro\) frontend; Django 6 + DRF backend; SQLite) Tj ET
+BT /F1 10 Tf 40 709 Td (Render mode: SSR \(TanStack Start / Nitro\); hybrid with client interactivity) Tj ET
+BT /F1 10 Tf 40 697 Td (Site type: local) Tj ET
+BT /F1 10 Tf 40 685 Td (Frontend: web/ ? file-based routes, buildPageMeta, JSON-LD, site SEO config) Tj ET
+BT /F1 10 Tf 40 673 Td (Backend: server/ ? Django REST API under /api/ \(public pages still primarily site.ts; API) Tj ET
+BT /F1 10 Tf 40 661 Td (ready\)) Tj ET
+BT /F1 10 Tf 40 649 Td (Loops run: 1) Tj ET
+BT /F1 10 Tf 40 637 Td (Agents used: A1, A2, A3, A4, A5, A6, A7, A8, T-LOCAL, R1, R2, R3, R4, R5) Tj ET
+BT /F1 10 Tf 40 625 Td () Tj ET
+BT /F1 13 Tf 40 613 Td (Summary) Tj ET
+BT /F1 10 Tf 40 598 Td (PASS: 42 FAIL: 0 N/A: 6) Tj ET
+BT /F1 12 Tf 40 586 Td (Verdict: READY) Tj ET
+BT /F1 10 Tf 40 572 Td () Tj ET
+BT /F1 13 Tf 40 560 Td (Checklist) Tj ET
+BT /F1 10 Tf 40 545 Td (----------------------------------------------------------------------------------------) Tj ET
+BT /F1 10 Tf 40 533 Td ([PASS] #1 Website / page purpose) Tj ET
+BT /F1 9 Tf 40 521 Td (Dedicated topical routes with clear H1s) Tj ET
+BT /F1 10 Tf 40 509 Td ([PASS] #3 SEO basics) Tj ET
+BT /F1 9 Tf 40 497 Td (Home H1 recruitment intent; expanded news bodies in site.ts + news.$slug.tsx) Tj ET
+BT /F1 10 Tf 40 485 Td ([PASS] #4 AEO) Tj ET
+BT /F1 9 Tf 40 473 Td (Answer-first leads on home/about; what/how on services; FAQ on contact) Tj ET
+BT /F1 10 Tf 40 461 Td ([PASS] #5 GEO) Tj ET
+BT /F1 9 Tf 40 449 Td (Brand + Kathmandu NAP + audience consistent in site.ts/schema) Tj ET
+BT /F1 10 Tf 40 437 Td ([PASS] #6 Crawling) Tj ET
+BT /F1 9 Tf 40 425 Td (Nav/footer + sitemap + in-body links including /privacy /terms) Tj ET
+BT /F1 10 Tf 40 413 Td ([PASS] #7 Indexing readiness) Tj ET
+BT /F1 9 Tf 40 401 Td (Admin noindex; robots Disallow /admin; public pages indexable) Tj ET
+BT /F1 10 Tf 40 389 Td ([PASS] #9 robots.txt) Tj ET
+BT /F1 9 Tf 40 377 Td (web/public/robots.txt ? Sitemap + Disallow /admin) Tj ET
+BT /F1 10 Tf 40 365 Td ([PASS] #10 sitemap.xml) Tj ET
+BT /F1 9 Tf 40 353 Td (web/public/sitemap.xml ? all public URLs + news slugs; no trailing-slash drift) Tj ET
+BT /F1 10 Tf 40 341 Td ([PASS] #11 JSON-LD) Tj ET
+BT /F1 9 Tf 40 329 Td (JsonLd.tsx + schema.ts @graph / FAQ / Article / BreadcrumbList) Tj ET
+BT /F1 10 Tf 40 317 Td ([PASS] #12 Schema) Tj ET
+BT /F1 9 Tf 40 305 Td (Organization + EmploymentAgency types with required props) Tj ET
+BT /F1 10 Tf 40 293 Td ([PASS] #13 Structured data) Tj ET
+BT /F1 9 Tf 40 281 Td (Injected via SiteLayout + per-page JsonLd) Tj ET
+BT /F1 10 Tf 40 269 Td ([PASS] #14 Rich results eligibility) Tj ET
+BT /F1 9 Tf 40 257 Td (Schema matches visible FAQ/Article/Org; no fake AggregateRating) Tj ET
+BT /F1 10 Tf 40 245 Td ([PASS] #15 Breadcrumb) Tj ET
+BT /F1 9 Tf 40 233 Td (PageBanner UI + BreadcrumbList JSON-LD on nested pages) Tj ET
+BT /F1 10 Tf 40 221 Td ([PASS] #16 Canonical URL) Tj ET
+BT /F1 9 Tf 40 209 Td (buildPageMeta canonical + absoluteUrl normalize; root no conflict) Tj ET
+BT /F1 10 Tf 40 197 Td ([PASS] #17 Meta title) Tj ET
+BT /F1 9 Tf 40 185 Td (Per-route titles; news truncateTitle ~58 chars) Tj ET
+BT /F1 10 Tf 40 173 Td ([PASS] #18 Meta description) Tj ET
+BT /F1 9 Tf 40 161 Td (Unique descriptions on public routes) Tj ET
+BT /F1 10 Tf 40 149 Td ([PASS] #19 Headings / single H1) Tj ET
+BT /F1 9 Tf 40 137 Td (Home one H1; news titleAs=p + article h1 only) Tj ET
+BT /F1 10 Tf 40 125 Td ([PASS] #20 Keywords) Tj ET
+BT /F1 9 Tf 40 113 Td (Recruitment terms in title/H1/lead aligned) Tj ET
+BT /F1 10 Tf 40 101 Td ([PASS] #21 Internal links) Tj ET
+BT /F1 9 Tf 40 89 Td (Nav/footer + contextual services?vacancies?contact links) Tj ET
+BT /F1 10 Tf 40 77 Td ([PASS] #22 External links) Tj ET
+BT /F1 9 Tf 40 65 Td (DoFE / IOM / IRIS / NAFEA citations with noopener) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 6 0 R /Resources << /Font << /F1 9 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 3985 >>
+stream
+BT /F1 10 Tf 40 800 Td ([N/A] #23 Backlinks) Tj ET
+BT /F1 9 Tf 40 788 Td (Strategy note in seo.ts ? manual outreach only) Tj ET
+BT /F1 10 Tf 40 776 Td ([PASS] #24 Page speed) Tj ET
+BT /F1 9 Tf 40 764 Td (Hero fetchPriority=high; below-fold lazy; build OK) Tj ET
+BT /F1 10 Tf 40 752 Td ([PASS] #25 Mobile friendly) Tj ET
+BT /F1 9 Tf 40 740 Td (Responsive Tailwind + mobile nav) Tj ET
+BT /F1 10 Tf 40 728 Td ([PASS] #26 HTTPS) Tj ET
+BT /F1 9 Tf 40 716 Td (SITE_URL https://www.vnvnepal.com + VITE_SITE_URL override) Tj ET
+BT /F1 10 Tf 40 704 Td ([PASS] #27 Core Web Vitals) Tj ET
+BT /F1 9 Tf 40 692 Td (img dims, display=swap, async decoding) Tj ET
+BT /F1 10 Tf 40 680 Td ([PASS] #28 Image SEO) Tj ET
+BT /F1 9 Tf 40 668 Td (Descriptive asset filenames + og-default.jpg) Tj ET
+BT /F1 10 Tf 40 656 Td ([PASS] #29 Alt text) Tj ET
+BT /F1 9 Tf 40 644 Td (Meaningful alts on content images / PageBanner) Tj ET
+BT /F1 10 Tf 40 632 Td ([PASS] #30 Open Graph) Tj ET
+BT /F1 9 Tf 40 620 Td (og:title/description/url/image/type via buildPageMeta) Tj ET
+BT /F1 10 Tf 40 608 Td ([PASS] #31 Twitter Card) Tj ET
+BT /F1 9 Tf 40 596 Td (summary_large_image + title/description/image) Tj ET
+BT /F1 10 Tf 40 584 Td ([PASS] #32 FAQ schema) Tj ET
+BT /F1 9 Tf 40 572 Td (contact.tsx FAQ UI + FAQPage JSON-LD aligned) Tj ET
+BT /F1 10 Tf 40 560 Td ([PASS] #33 Organization schema) Tj ET
+BT /F1 9 Tf 40 548 Td (buildOrganizationGraph in SiteLayout) Tj ET
+BT /F1 10 Tf 40 536 Td ([PASS] #34 LocalBusiness schema) Tj ET
+BT /F1 9 Tf 40 524 Td (EmploymentAgency + NAP + openingHours) Tj ET
+BT /F1 10 Tf 40 512 Td ([N/A] #35 Product schema) Tj ET
+BT /F1 9 Tf 40 500 Td (Vacancies are jobs, not e-commerce products) Tj ET
+BT /F1 10 Tf 40 488 Td ([N/A] #36 Review schema) Tj ET
+BT /F1 9 Tf 40 476 Td (No review system ? AggregateRating intentionally omitted) Tj ET
+BT /F1 10 Tf 40 464 Td ([PASS] #37 Article schema) Tj ET
+BT /F1 9 Tf 40 452 Td (news.$slug Article JSON-LD with dates/author) Tj ET
+BT /F1 10 Tf 40 440 Td ([N/A] #38 Video schema) Tj ET
+BT /F1 9 Tf 40 428 Td (No real video content) Tj ET
+BT /F1 10 Tf 40 416 Td ([PASS] #39 Search Console) Tj ET
+BT /F1 9 Tf 40 404 Td (Optional VITE_GOOGLE_SITE_VERIFICATION meta slot) Tj ET
+BT /F1 10 Tf 40 392 Td ([PASS] #40 Analytics) Tj ET
+BT /F1 9 Tf 40 380 Td (Analytics.tsx gated by VITE_GA_MEASUREMENT_ID / VITE_PLAUSIBLE_DOMAIN) Tj ET
+BT /F1 10 Tf 40 368 Td ([PASS] #41 EEAT) Tj ET
+BT /F1 9 Tf 40 356 Td (About/contact + privacy.tsx + terms.tsx with real NAP) Tj ET
+BT /F1 10 Tf 40 344 Td ([PASS] #42 Helpful content) Tj ET
+BT /F1 9 Tf 40 332 Td (Expanded news bodies; contact/vacancies next steps) Tj ET
+BT /F1 10 Tf 40 320 Td ([PASS] #43 Fresh content) Tj ET
+BT /F1 9 Tf 40 308 Td (datePublished/dateModified on news list + detail) Tj ET
+BT /F1 10 Tf 40 296 Td ([PASS] #44 Topical authority) Tj ET
+BT /F1 9 Tf 40 284 Td (Services/overseas/news/vacancies/awards set) Tj ET
+BT /F1 10 Tf 40 272 Td ([PASS] #45 Entity SEO) Tj ET
+BT /F1 9 Tf 40 260 Td (VNVNEPAL / Vision & Value / NAP aligned copy+schema) Tj ET
+BT /F1 10 Tf 40 248 Td ([PASS] #46 Semantic SEO) Tj ET
+BT /F1 9 Tf 40 236 Td (Ethical recruitment, sectors, compliance topics) Tj ET
+BT /F1 10 Tf 40 224 Td ([PASS] #47 Content clusters) Tj ET
+BT /F1 9 Tf 40 212 Td (Hub ? overseas ? jobs/news internal links) Tj ET
+BT /F1 10 Tf 40 200 Td ([PASS] #48 URL structure) Tj ET
+BT /F1 9 Tf 40 188 Td (Lowercase hyphen routes; absoluteUrl strips trailing slash) Tj ET
+BT /F1 10 Tf 40 176 Td ([N/A] #49 Image & video sitemaps) Tj ET
+BT /F1 9 Tf 40 164 Td (Few media assets ? not warranted) Tj ET
+BT /F1 10 Tf 40 152 Td ([N/A] #50 IndexNow) Tj ET
+BT /F1 9 Tf 40 140 Td (Documented in seo.ts; await real key) Tj ET
+BT /F1 10 Tf 40 128 Td () Tj ET
+BT /F1 13 Tf 40 116 Td (Files changed) Tj ET
+BT /F1 10 Tf 40 101 Td (- web/src/lib/seo.ts) Tj ET
+BT /F1 10 Tf 40 89 Td (- web/src/lib/schema.ts) Tj ET
+BT /F1 10 Tf 40 77 Td (- web/src/config/seo.ts) Tj ET
+BT /F1 10 Tf 40 65 Td (- web/src/components/seo/JsonLd.tsx) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 8 0 R /Resources << /Font << /F1 9 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 2127 >>
+stream
+BT /F1 10 Tf 40 800 Td (- web/src/components/seo/Analytics.tsx) Tj ET
+BT /F1 10 Tf 40 788 Td (- web/src/components/site/SiteLayout.tsx) Tj ET
+BT /F1 10 Tf 40 776 Td (- web/src/components/site/PageBanner.tsx) Tj ET
+BT /F1 10 Tf 40 764 Td (- web/src/components/site/Footer.tsx) Tj ET
+BT /F1 10 Tf 40 752 Td (- web/src/data/site.ts) Tj ET
+BT /F1 10 Tf 40 740 Td (- web/src/routes/__root.tsx) Tj ET
+BT /F1 10 Tf 40 728 Td (- web/src/routes/index.tsx) Tj ET
+BT /F1 10 Tf 40 716 Td (- web/src/routes/about.tsx) Tj ET
+BT /F1 10 Tf 40 704 Td (- web/src/routes/contact.tsx) Tj ET
+BT /F1 10 Tf 40 692 Td (- web/src/routes/news.$slug.tsx) Tj ET
+BT /F1 10 Tf 40 680 Td (- web/src/routes/news.index.tsx) Tj ET
+BT /F1 10 Tf 40 668 Td (- web/src/routes/services.index.tsx) Tj ET
+BT /F1 10 Tf 40 656 Td (- web/src/routes/services.overseas-recruitment.tsx) Tj ET
+BT /F1 10 Tf 40 644 Td (- web/src/routes/vacancies.tsx) Tj ET
+BT /F1 10 Tf 40 632 Td (- web/src/routes/privacy.tsx) Tj ET
+BT /F1 10 Tf 40 620 Td (- web/src/routes/terms.tsx) Tj ET
+BT /F1 10 Tf 40 608 Td (- web/src/routes/admin/route.tsx) Tj ET
+BT /F1 10 Tf 40 596 Td (- web/public/robots.txt) Tj ET
+BT /F1 10 Tf 40 584 Td (- web/public/sitemap.xml) Tj ET
+BT /F1 10 Tf 40 572 Td (- web/public/og-default.jpg) Tj ET
+BT /F1 10 Tf 40 560 Td (- web/.env.example) Tj ET
+BT /F1 10 Tf 40 548 Td () Tj ET
+BT /F1 13 Tf 40 536 Td (Notes) Tj ET
+BT /F1 10 Tf 40 521 Td (- BEFORE ? AFTER: 17/25/7 ? 42/0/6 PASS/FAIL/N/A; verdict READY.) Tj ET
+BT /F1 10 Tf 40 509 Td (- npm run build succeeded after SEO changes.) Tj ET
+BT /F1 10 Tf 40 497 Td (- Confirm production VITE_SITE_URL=https://www.vnvnepal.com \(or live domain\).) Tj ET
+BT /F1 10 Tf 40 485 Td (- Set GA/Plausible/GSC env vars for production measurement.) Tj ET
+BT /F1 10 Tf 40 473 Td (- Replace footer social href=# with real profiles then add sameAs.) Tj ET
+BT /F1 10 Tf 40 461 Td (- Public pages still primarily static site.ts; Django API wiring remains a future FE?BE) Tj ET
+BT /F1 10 Tf 40 449 Td (enhancement.) Tj ET
+BT /F1 10 Tf 40 437 Td () Tj ET
+BT /F1 10 Tf 40 425 Td () Tj ET
+BT /F1 9 Tf 40 413 Td (Product: Infelo SEO) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000253 00000 n 
+0000004576 00000 n 
+0000004702 00000 n 
+0000008739 00000 n 
+0000008865 00000 n 
+0000011044 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+11114
+%%EOF

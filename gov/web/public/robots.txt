@@ -1,0 +1,7 @@
+# SITE_URL / VITE_SITE_URL should match the Sitemap host below (production: https://www.dofe.gov.np).
+
+User-agent: *
+Allow: /
+Disallow: /admin
+
+Sitemap: https://www.dofe.gov.np/sitemap.xml

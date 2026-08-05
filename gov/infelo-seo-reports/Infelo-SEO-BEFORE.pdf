@@ -1,0 +1,176 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 9 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 4608 >>
+stream
+BT /F1 16 Tf 40 800 Td (Infelo SEO ? BEFORE Report) Tj ET
+BT /F1 11 Tf 40 782 Td (Automatic SEO / AEO / GEO audit) Tj ET
+BT /F1 10 Tf 40 769 Td () Tj ET
+BT /F1 10 Tf 40 757 Td (Generated: 2026-07-30T16:15:00+05:45) Tj ET
+BT /F1 10 Tf 40 745 Td (Project: Foreign_Employment \(Department of Foreign Employment, Nepal\)) Tj ET
+BT /F1 10 Tf 40 733 Td (Stack: TanStack Start \(React 19\) + Vite + Nitro/Cloudflare; Django REST API + SQLite) Tj ET
+BT /F1 10 Tf 40 721 Td (Render mode: SSR \(TanStack Start / Nitro\)) Tj ET
+BT /F1 10 Tf 40 709 Td (Site type: Government portal / local office hybrid + content \(notices, publications\)) Tj ET
+BT /F1 10 Tf 40 697 Td (Frontend: web/ \(TanStack Router file routes, CmsProvider\)) Tj ET
+BT /F1 10 Tf 40 685 Td (Backend: server/ \(Django DRF PublicSiteDataView + CMS models\)) Tj ET
+BT /F1 10 Tf 40 673 Td () Tj ET
+BT /F1 13 Tf 40 661 Td (Summary) Tj ET
+BT /F1 10 Tf 40 646 Td (PASS: 12 FAIL: 28 N/A: 6) Tj ET
+BT /F1 12 Tf 40 634 Td (Verdict: NEEDS WORK) Tj ET
+BT /F1 10 Tf 40 620 Td () Tj ET
+BT /F1 13 Tf 40 608 Td (Checklist) Tj ET
+BT /F1 10 Tf 40 593 Td (----------------------------------------------------------------------------------------) Tj ET
+BT /F1 10 Tf 40 581 Td ([PASS] #1 Page purpose / one topic) Tj ET
+BT /F1 9 Tf 40 569 Td (Public routes have clear topics \(jobs, contact, notices, pages/$slug\). Homepage is portal hub) Tj ET
+BT /F1 9 Tf 40 557 Td (by design.) Tj ET
+BT /F1 10 Tf 40 545 Td ([PASS] #3 SEO basics) Tj ET
+BT /F1 9 Tf 40 533 Td (Most public routes set title + description via TanStack head\(\); copy is topical.) Tj ET
+BT /F1 10 Tf 40 521 Td ([FAIL] #4 AEO answer-first) Tj ET
+BT /F1 9 Tf 40 509 Td (No definition/answer-first blurb or FAQ UI on home or key service pages) Tj ET
+BT /F1 9 Tf 40 497 Td (\(web/src/routes/index.tsx\).) Tj ET
+BT /F1 10 Tf 40 485 Td ([FAIL] #5 GEO / citable entities) Tj ET
+BT /F1 9 Tf 40 473 Td (NAP in footer/header but no centralized entity config or citable org blurb for AI citation.) Tj ET
+BT /F1 10 Tf 40 461 Td ([FAIL] #6 Crawling / internal discovery) Tj ET
+BT /F1 9 Tf 40 449 Td (Nav OK \(web/src/data/site.ts\); footer Important Links use href="#" \(site-footer.tsx\) ? not) Tj ET
+BT /F1 9 Tf 40 437 Td (crawlable.) Tj ET
+BT /F1 10 Tf 40 425 Td ([FAIL] #7 Indexing readiness) Tj ET
+BT /F1 9 Tf 40 413 Td (No noindex on public pages, but /admin is not disallowed via robots and has no robots noindex) Tj ET
+BT /F1 9 Tf 40 401 Td (meta.) Tj ET
+BT /F1 10 Tf 40 389 Td ([FAIL] #9 robots.txt) Tj ET
+BT /F1 9 Tf 40 377 Td (web/public/robots.txt allows all crawlers but omits Sitemap: and Disallow: /admin.) Tj ET
+BT /F1 10 Tf 40 365 Td ([FAIL] #10 sitemap.xml) Tj ET
+BT /F1 9 Tf 40 353 Td (No sitemap.xml in public/ and no generated route; Django has no sitemap view.) Tj ET
+BT /F1 10 Tf 40 341 Td ([FAIL] #11 JSON-LD present) Tj ET
+BT /F1 9 Tf 40 329 Td (No application/ld+json anywhere under web/src.) Tj ET
+BT /F1 10 Tf 40 317 Td ([FAIL] #12 Schema.org types) Tj ET
+BT /F1 9 Tf 40 305 Td (No Organization/GovernmentOffice/Article/FAQ/BreadcrumbList schema.) Tj ET
+BT /F1 10 Tf 40 293 Td ([FAIL] #13 Structured data validity) Tj ET
+BT /F1 9 Tf 40 281 Td (None to validate.) Tj ET
+BT /F1 10 Tf 40 269 Td ([PASS] #14 Rich results honesty) Tj ET
+BT /F1 9 Tf 40 257 Td (No fabricated Review/AggregateRating schema present.) Tj ET
+BT /F1 10 Tf 40 245 Td ([FAIL] #15 Breadcrumbs) Tj ET
+BT /F1 9 Tf 40 233 Td (PageBar label only; no BreadcrumbList UI/schema on nested routes.) Tj ET
+BT /F1 10 Tf 40 221 Td ([FAIL] #16 Canonical URL) Tj ET
+BT /F1 9 Tf 40 209 Td (No rel=canonical or alternates.canonical; no SITE_URL config.) Tj ET
+BT /F1 10 Tf 40 197 Td ([PASS] #17 Meta title) Tj ET
+BT /F1 9 Tf 40 185 Td (Per-route titles on index, jobs, contact, content, pages, etc.) Tj ET
+BT /F1 10 Tf 40 173 Td ([PASS] #18 Meta description) Tj ET
+BT /F1 9 Tf 40 161 Td (Per-route descriptions present on major public pages.) Tj ET
+BT /F1 10 Tf 40 149 Td ([FAIL] #19 Headings / single H1) Tj ET
+BT /F1 9 Tf 40 137 Td (Homepage \(index.tsx\) has no H1 ? only SectionTitle as h2. Inner pages generally have one H1.) Tj ET
+BT /F1 10 Tf 40 125 Td ([PASS] #20 Keywords natural) Tj ET
+BT /F1 9 Tf 40 113 Td (Foreign employment / labour approval terms appear naturally in titles and copy.) Tj ET
+BT /F1 10 Tf 40 101 Td ([FAIL] #21 Internal links) Tj ET
+BT /F1 9 Tf 40 89 Td (Nav linked well; footer links dead \(#\); limited in-body contextual links.) Tj ET
+BT /F1 10 Tf 40 77 Td ([FAIL] #22 External refs) Tj ET
+BT /F1 9 Tf 40 65 Td (Few authoritative outbound citations beyond service URLs; footer gov links not wired.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 6 0 R /Resources << /Font << /F1 9 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 4560 >>
+stream
+BT /F1 10 Tf 40 800 Td ([N/A] #23 Backlinks) Tj ET
+BT /F1 9 Tf 40 788 Td (Manual PR/partnership strategy only.) Tj ET
+BT /F1 10 Tf 40 776 Td ([PASS] #24 Page speed) Tj ET
+BT /F1 9 Tf 40 764 Td (lazy loading on some images; Vite code-splitting via router. Residual: large homepage.) Tj ET
+BT /F1 10 Tf 40 752 Td ([PASS] #25 Mobile friendly) Tj ET
+BT /F1 9 Tf 40 740 Td (Responsive Tailwind layouts, viewport meta in __root.tsx.) Tj ET
+BT /F1 10 Tf 40 728 Td ([FAIL] #26 HTTPS absolute URLs) Tj ET
+BT /F1 9 Tf 40 716 Td (No VITE_SITE_URL / canonical https base for OG/canonical.) Tj ET
+BT /F1 10 Tf 40 704 Td ([PASS] #27 CWV hygiene) Tj ET
+BT /F1 9 Tf 40 692 Td (width/height on emblem/gallery images; font-display via Google Fonts CSS.) Tj ET
+BT /F1 10 Tf 40 680 Td ([PASS] #28 Image filenames) Tj ET
+BT /F1 9 Tf 40 668 Td (Assets under web/src/assets use descriptive names \(nepal-emblem, gallery-*\).) Tj ET
+BT /F1 10 Tf 40 656 Td ([FAIL] #29 Alt text) Tj ET
+BT /F1 9 Tf 40 644 Td (Some content emblem imgs use alt="" on homepage; gallery has alts.) Tj ET
+BT /F1 10 Tf 40 632 Td ([FAIL] #30 Open Graph) Tj ET
+BT /F1 9 Tf 40 620 Td (og:title/description on pages; missing og:image, og:url, absolute URLs.) Tj ET
+BT /F1 10 Tf 40 608 Td ([FAIL] #31 Twitter Card) Tj ET
+BT /F1 9 Tf 40 596 Td (Root has twitter:card only; missing twitter:title/description/image per page.) Tj ET
+BT /F1 10 Tf 40 584 Td ([FAIL] #32 FAQ schema) Tj ET
+BT /F1 9 Tf 40 572 Td (No FAQ UI or FAQPage JSON-LD.) Tj ET
+BT /F1 10 Tf 40 560 Td ([FAIL] #33 Organization schema) Tj ET
+BT /F1 9 Tf 40 548 Td (No Organization/GovernmentOrganization JSON-LD in layout.) Tj ET
+BT /F1 10 Tf 40 536 Td ([FAIL] #34 LocalBusiness / Gov office) Tj ET
+BT /F1 9 Tf 40 524 Td (Local NAP exists in UI; no LocalBusiness/GovernmentOffice schema with geo/hours.) Tj ET
+BT /F1 10 Tf 40 512 Td ([N/A] #35 Product schema) Tj ET
+BT /F1 9 Tf 40 500 Td (Not e-commerce.) Tj ET
+BT /F1 10 Tf 40 488 Td ([N/A] #36 Review schema) Tj ET
+BT /F1 9 Tf 40 476 Td (No review system; correctly absent.) Tj ET
+BT /F1 10 Tf 40 464 Td ([FAIL] #37 Article schema) Tj ET
+BT /F1 9 Tf 40 452 Td (content/$id notices lack Article JSON-LD despite article og:type.) Tj ET
+BT /F1 10 Tf 40 440 Td ([N/A] #38 Video schema) Tj ET
+BT /F1 9 Tf 40 428 Td (Gallery AV albums are photo counts, not video players.) Tj ET
+BT /F1 10 Tf 40 416 Td ([FAIL] #39 Search Console) Tj ET
+BT /F1 9 Tf 40 404 Td (No verification meta slot in site config; submit steps not documented in-repo.) Tj ET
+BT /F1 10 Tf 40 392 Td ([FAIL] #40 Analytics) Tj ET
+BT /F1 9 Tf 40 380 Td (No GA/Plausible hooks or consent-aware placeholder.) Tj ET
+BT /F1 10 Tf 40 368 Td ([PASS] #41 EEAT) Tj ET
+BT /F1 9 Tf 40 356 Td (Contact, team, about pages, officials listed with roles.) Tj ET
+BT /F1 10 Tf 40 344 Td ([PASS] #42 Helpful content) Tj ET
+BT /F1 9 Tf 40 332 Td (Services, jobs, notices, downloads serve real citizen tasks.) Tj ET
+BT /F1 10 Tf 40 320 Td ([PASS] #43 Freshness) Tj ET
+BT /F1 9 Tf 40 308 Td (Content dates displayed; Django Content.published_at / updated_at models.) Tj ET
+BT /F1 10 Tf 40 296 Td ([PASS] #44 Topical authority) Tj ET
+BT /F1 9 Tf 40 284 Td (Category hubs for acts, notices, agencies, labour approval.) Tj ET
+BT /F1 10 Tf 40 272 Td ([FAIL] #45 Entity SEO) Tj ET
+BT /F1 9 Tf 40 260 Td (Brand naming inconsistent across strings; no single seo/site config source of truth.) Tj ET
+BT /F1 10 Tf 40 248 Td ([FAIL] #46 Semantic SEO) Tj ET
+BT /F1 9 Tf 40 236 Td (Home lacks related-concept sections \(what DoFE does, how labour approval works\).) Tj ET
+BT /F1 10 Tf 40 224 Td ([PASS] #47 Content clusters) Tj ET
+BT /F1 9 Tf 40 212 Td (Nav hub?category?content graph exists.) Tj ET
+BT /F1 10 Tf 40 200 Td ([PASS] #48 URL structure) Tj ET
+BT /F1 9 Tf 40 188 Td (Hyphenated lowercase routes \(/contact-us, /services-list, /category/$slug\).) Tj ET
+BT /F1 10 Tf 40 176 Td ([N/A] #49 Image/video sitemaps) Tj ET
+BT /F1 9 Tf 40 164 Td (Media volume modest; main sitemap sufficient if present.) Tj ET
+BT /F1 10 Tf 40 152 Td ([FAIL] #50 IndexNow) Tj ET
+BT /F1 9 Tf 40 140 Td (No publish ping hook; CMS publish path has no IndexNow.) Tj ET
+BT /F1 10 Tf 40 128 Td () Tj ET
+BT /F1 13 Tf 40 116 Td (Notes) Tj ET
+BT /F1 10 Tf 40 101 Td (- Recon: monorepo with web \(FE\) + server \(Django BE\).) Tj ET
+BT /F1 10 Tf 40 89 Td (- Site type agents: T-LOCAL \(gov office NAP\) + T-CONTENT \(notices/articles\).) Tj ET
+BT /F1 10 Tf 40 77 Td (- Production domain assumed https://www.dofe.gov.np based on email/branding; confirm SITE_URL.) Tj ET
+BT /F1 10 Tf 40 65 Td () Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 8 0 R /Resources << /Font << /F1 9 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 81 >>
+stream
+BT /F1 10 Tf 40 800 Td () Tj ET
+BT /F1 9 Tf 40 788 Td (Product: Infelo SEO) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000253 00000 n 
+0000004913 00000 n 
+0000005039 00000 n 
+0000009651 00000 n 
+0000009777 00000 n 
+0000009908 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+9978
+%%EOF
